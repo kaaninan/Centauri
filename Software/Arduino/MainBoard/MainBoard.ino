@@ -4,6 +4,8 @@
 // Variables
 float bat_voltage = 0;
 
+int low_voltage = 108; // Shutdown Voltage
+
 // Digital IO
 const int motor1_dir1_pin = 2;
 const int motor1_dir2_pin = 4;

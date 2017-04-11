@@ -14,7 +14,7 @@ void power_switch() {
 
   // Pil seviyesini kontrol et
   int volt = bat_voltage * 10;
-  if (volt > 108) {
+  if (volt > low_voltage) {
     digitalWrite(power_pin, HIGH);
   } else {
     // Pil seviyesi düşük - Uyarı ver
