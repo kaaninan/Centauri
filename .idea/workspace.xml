@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a06d55ea-1a8b-432d-a438-b48b64c28f77" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Software/Arduino/MainBoard/MainBoard.ino" afterPath="$PROJECT_DIR$/Software/Arduino/MainBoard/MainBoard.ino" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Software/Arduino/MainBoard/Power.ino" afterPath="$PROJECT_DIR$/Software/Arduino/MainBoard/Power.ino" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Software/ROS/src/centauri/CMakeLists.txt" afterPath="$PROJECT_DIR$/Software/ROS/src/centauri/CMakeLists.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Software/ROS/src/centauri/package.xml" afterPath="$PROJECT_DIR$/Software/ROS/src/centauri/package.xml" />
-    </list>
+    <list default="true" id="a06d55ea-1a8b-432d-a438-b48b64c28f77" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
