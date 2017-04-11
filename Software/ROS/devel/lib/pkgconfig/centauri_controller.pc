@@ -1,0 +1,8 @@
+prefix=/home/robot/Centauri/Software/ROS/devel
+
+Name: centauri_controller
+Description: Description of centauri_controller
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/robot/Centauri/Software/ROS/devel/lib 
+Requires: 
