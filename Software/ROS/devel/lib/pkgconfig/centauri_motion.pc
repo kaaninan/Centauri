@@ -1,0 +1,8 @@
+prefix=/home/robot/Centauri/Software/ROS/devel
+
+Name: centauri_motion
+Description: Description of centauri_motion
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/robot/Centauri/Software/ROS/devel/lib 
+Requires: 
