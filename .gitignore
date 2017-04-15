@@ -1,8 +1,8 @@
 ### ROS ###
-Software/ROS/build/
-Software/ROS/bin/
-Software/ROS/lib/
-Software/ROS/msg_gen/
-Software/ROS/srv_gen/
+Software/build/
+Software/bin/
+Software/lib/
+Software/msg_gen/
+Software/srv_gen/
 .DS_Store
 .idea/
