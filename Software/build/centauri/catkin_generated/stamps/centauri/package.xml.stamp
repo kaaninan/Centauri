@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package>
+  <name>centauri</name>
+  <version>0.1.0</version>
+  <description>The centauri package</description>
+  <maintainer email="iletisim@kaaninan.net">Kaan Inan</maintainer>
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <run_depend>centauri_controller</run_depend>
+  <run_depend>centauri_cam</run_depend>
+  <run_depend>centauri_sound</run_depend>
+  <run_depend>centauri_bridge</run_depend>
+  <run_depend>centauri_interface</run_depend>
+  <run_depend>centauri_osc</run_depend>
+  <run_depend>centauri_start</run_depend>
+
+  <export>
+    <metapackage/>
+  </export>
+</package>

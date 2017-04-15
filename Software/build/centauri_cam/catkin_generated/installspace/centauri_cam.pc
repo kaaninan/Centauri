@@ -1,0 +1,8 @@
+prefix=/home/robot/Centauri/Software/ROS/install
+
+Name: centauri_cam
+Description: Description of centauri_cam
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/robot/Centauri/Software/ROS/install/lib 
+Requires: 

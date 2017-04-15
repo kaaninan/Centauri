@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package>
+  <name>centauri</name>
+  <version>0.1.0</version>
+  <description>The centauri_hardware package</description>
+  <maintainer email="iletisim@kaaninan.net">Kaan Inan</maintainer>
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>rospy</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <run_depend>rospy</run_depend>
+  <run_depend>std_msgs</run_depend>
+
+  <export>
+  </export>
+</package>

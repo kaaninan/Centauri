@@ -1,0 +1,8 @@
+prefix=/home/robot/Centauri/Software/ROS/install
+
+Name: centauri_eeg
+Description: Description of centauri_eeg
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/robot/Centauri/Software/ROS/install/lib 
+Requires: 
