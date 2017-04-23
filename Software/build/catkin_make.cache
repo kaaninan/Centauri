@@ -1,2 +1,0 @@
-centauri:centauri_bridge:centauri_cam:centauri_controller:centauri_eeg:centauri_hardware:centauri_interface:centauri_motion:centauri_sound:emotiv-ros
--DCATKIN_DEVEL_PREFIX=/home/robot/Centauri/Software/devel -DCMAKE_INSTALL_PREFIX=/home/robot/Centauri/Software/install -G Unix Makefiles
