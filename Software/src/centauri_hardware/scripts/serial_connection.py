@@ -8,16 +8,16 @@ import os
 from std_msgs.msg import *
 
 # DEFAULT
-port = "/dev/ttyS1"
-baudrate = 19200
 
 docname = os.path.basename(__file__)
 
 
 # Serial
 
-def connect(port, baudrate):
+def connect():
 	global board
+	port = rospy.get_param('~port')
+	baudrate = rospy.get_param('~baudrate')
 	board = serial.Serial(port, baudrate)
 	if(board is None):
 		rospy.logfatal(docname+ " couldn't connect serial!")
@@ -92,7 +92,6 @@ def send_dc(data):
 
 
 def send_servo(data):
-	rospy.loginfo(data)
 	servo_id = data.data[0]
 	servo_pos = data.data[1]
 	servo_speed = data.data[2]
@@ -113,7 +112,7 @@ def main():
 
 	rospy.init_node('serial_connection', anonymous=True)
 	
-	connect(port, baudrate)
+	connect()
 		
 	# Publish
 	pub_dis_front = rospy.Publisher('/distance_front', Int64, queue_size=10)

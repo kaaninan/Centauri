@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/robot/Centauri/Software/ROS/src
+CMAKE_SOURCE_DIR = /home/robot/Centauri/Software/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/robot/Centauri/Software/ROS/build
+CMAKE_BINARY_DIR = /home/robot/Centauri/Software/build
 
 # Utility rule file for download_extra_data.
 
@@ -67,6 +67,6 @@ CMakeFiles/download_extra_data.dir/clean:
 .PHONY : CMakeFiles/download_extra_data.dir/clean
 
 CMakeFiles/download_extra_data.dir/depend:
-	cd /home/robot/Centauri/Software/ROS/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robot/Centauri/Software/ROS/src /home/robot/Centauri/Software/ROS/src /home/robot/Centauri/Software/ROS/build /home/robot/Centauri/Software/ROS/build /home/robot/Centauri/Software/ROS/build/CMakeFiles/download_extra_data.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/robot/Centauri/Software/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robot/Centauri/Software/src /home/robot/Centauri/Software/src /home/robot/Centauri/Software/build /home/robot/Centauri/Software/build /home/robot/Centauri/Software/build/CMakeFiles/download_extra_data.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/download_extra_data.dir/depend
 

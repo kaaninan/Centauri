@@ -1,8 +1,8 @@
-# Install script for directory: /home/robot/Centauri/Software/ROS/src/centauri
+# Install script for directory: /home/robot/Centauri/Software/src/centauri
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/robot/Centauri/Software/ROS/install")
+  set(CMAKE_INSTALL_PREFIX "/home/robot/Centauri/Software/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,6 +33,6 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/centauri" TYPE FILE FILES "/home/robot/Centauri/Software/ROS/src/centauri/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/centauri" TYPE FILE FILES "/home/robot/Centauri/Software/src/centauri/package.xml")
 endif()
 

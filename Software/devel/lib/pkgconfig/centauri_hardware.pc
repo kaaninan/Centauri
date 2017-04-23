@@ -1,8 +1,8 @@
-prefix=/home/robot/Centauri/Software/ROS/devel
+prefix=/home/robot/Centauri/Software/devel
 
 Name: centauri_hardware
 Description: Description of centauri_hardware
-Version: 0.0.0
+Version: 0.1.0
 Cflags: 
-Libs: -L/home/robot/Centauri/Software/ROS/devel/lib 
+Libs: -L/home/robot/Centauri/Software/devel/lib 
 Requires: 

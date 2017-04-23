@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/robot/Centauri/Software/ROS/src
+CMAKE_SOURCE_DIR = /home/robot/Centauri/Software/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/robot/Centauri/Software/ROS/build
+CMAKE_BINARY_DIR = /home/robot/Centauri/Software/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -135,9 +135,9 @@ install/strip/fast: install/strip
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/ROS/build/CMakeFiles /home/robot/Centauri/Software/ROS/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/build/CMakeFiles /home/robot/Centauri/Software/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/ROS/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -464,6 +464,175 @@ rosgraph_msgs_generate_messages_lisp/fast:
 	$(MAKE) -f centauri_bridge/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make centauri_bridge/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_lisp/fast
 
+#=============================================================================
+# Target rules for targets named emotiv_epoc_genpy
+
+# Build rule for target.
+emotiv_epoc_genpy: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 emotiv_epoc_genpy
+.PHONY : emotiv_epoc_genpy
+
+# fast build rule for target.
+emotiv_epoc_genpy/fast:
+	$(MAKE) -f emotiv-ros/CMakeFiles/emotiv_epoc_genpy.dir/build.make emotiv-ros/CMakeFiles/emotiv_epoc_genpy.dir/build
+.PHONY : emotiv_epoc_genpy/fast
+
+#=============================================================================
+# Target rules for targets named emotiv_epoc_generate_messages_py
+
+# Build rule for target.
+emotiv_epoc_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 emotiv_epoc_generate_messages_py
+.PHONY : emotiv_epoc_generate_messages_py
+
+# fast build rule for target.
+emotiv_epoc_generate_messages_py/fast:
+	$(MAKE) -f emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_py.dir/build.make emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_py.dir/build
+.PHONY : emotiv_epoc_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named emotiv_epoc_gennodejs
+
+# Build rule for target.
+emotiv_epoc_gennodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 emotiv_epoc_gennodejs
+.PHONY : emotiv_epoc_gennodejs
+
+# fast build rule for target.
+emotiv_epoc_gennodejs/fast:
+	$(MAKE) -f emotiv-ros/CMakeFiles/emotiv_epoc_gennodejs.dir/build.make emotiv-ros/CMakeFiles/emotiv_epoc_gennodejs.dir/build
+.PHONY : emotiv_epoc_gennodejs/fast
+
+#=============================================================================
+# Target rules for targets named _emotiv_epoc_generate_messages_check_deps_ChangeFrequency
+
+# Build rule for target.
+_emotiv_epoc_generate_messages_check_deps_ChangeFrequency: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _emotiv_epoc_generate_messages_check_deps_ChangeFrequency
+.PHONY : _emotiv_epoc_generate_messages_check_deps_ChangeFrequency
+
+# fast build rule for target.
+_emotiv_epoc_generate_messages_check_deps_ChangeFrequency/fast:
+	$(MAKE) -f emotiv-ros/CMakeFiles/_emotiv_epoc_generate_messages_check_deps_ChangeFrequency.dir/build.make emotiv-ros/CMakeFiles/_emotiv_epoc_generate_messages_check_deps_ChangeFrequency.dir/build
+.PHONY : _emotiv_epoc_generate_messages_check_deps_ChangeFrequency/fast
+
+#=============================================================================
+# Target rules for targets named emotiv_epoc_generate_messages_cpp
+
+# Build rule for target.
+emotiv_epoc_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 emotiv_epoc_generate_messages_cpp
+.PHONY : emotiv_epoc_generate_messages_cpp
+
+# fast build rule for target.
+emotiv_epoc_generate_messages_cpp/fast:
+	$(MAKE) -f emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_cpp.dir/build.make emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_cpp.dir/build
+.PHONY : emotiv_epoc_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named emotiv_epoc_generate_messages_nodejs
+
+# Build rule for target.
+emotiv_epoc_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 emotiv_epoc_generate_messages_nodejs
+.PHONY : emotiv_epoc_generate_messages_nodejs
+
+# fast build rule for target.
+emotiv_epoc_generate_messages_nodejs/fast:
+	$(MAKE) -f emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_nodejs.dir/build.make emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_nodejs.dir/build
+.PHONY : emotiv_epoc_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named emotiv_epoc_generate_messages
+
+# Build rule for target.
+emotiv_epoc_generate_messages: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 emotiv_epoc_generate_messages
+.PHONY : emotiv_epoc_generate_messages
+
+# fast build rule for target.
+emotiv_epoc_generate_messages/fast:
+	$(MAKE) -f emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages.dir/build.make emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages.dir/build
+.PHONY : emotiv_epoc_generate_messages/fast
+
+#=============================================================================
+# Target rules for targets named emotiv_epoc_geneus
+
+# Build rule for target.
+emotiv_epoc_geneus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 emotiv_epoc_geneus
+.PHONY : emotiv_epoc_geneus
+
+# fast build rule for target.
+emotiv_epoc_geneus/fast:
+	$(MAKE) -f emotiv-ros/CMakeFiles/emotiv_epoc_geneus.dir/build.make emotiv-ros/CMakeFiles/emotiv_epoc_geneus.dir/build
+.PHONY : emotiv_epoc_geneus/fast
+
+#=============================================================================
+# Target rules for targets named _emotiv_epoc_generate_messages_check_deps_EEGFrame
+
+# Build rule for target.
+_emotiv_epoc_generate_messages_check_deps_EEGFrame: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _emotiv_epoc_generate_messages_check_deps_EEGFrame
+.PHONY : _emotiv_epoc_generate_messages_check_deps_EEGFrame
+
+# fast build rule for target.
+_emotiv_epoc_generate_messages_check_deps_EEGFrame/fast:
+	$(MAKE) -f emotiv-ros/CMakeFiles/_emotiv_epoc_generate_messages_check_deps_EEGFrame.dir/build.make emotiv-ros/CMakeFiles/_emotiv_epoc_generate_messages_check_deps_EEGFrame.dir/build
+.PHONY : _emotiv_epoc_generate_messages_check_deps_EEGFrame/fast
+
+#=============================================================================
+# Target rules for targets named emotiv_epoc_generate_messages_lisp
+
+# Build rule for target.
+emotiv_epoc_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 emotiv_epoc_generate_messages_lisp
+.PHONY : emotiv_epoc_generate_messages_lisp
+
+# fast build rule for target.
+emotiv_epoc_generate_messages_lisp/fast:
+	$(MAKE) -f emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_lisp.dir/build.make emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_lisp.dir/build
+.PHONY : emotiv_epoc_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named emotiv_epoc_gencpp
+
+# Build rule for target.
+emotiv_epoc_gencpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 emotiv_epoc_gencpp
+.PHONY : emotiv_epoc_gencpp
+
+# fast build rule for target.
+emotiv_epoc_gencpp/fast:
+	$(MAKE) -f emotiv-ros/CMakeFiles/emotiv_epoc_gencpp.dir/build.make emotiv-ros/CMakeFiles/emotiv_epoc_gencpp.dir/build
+.PHONY : emotiv_epoc_gencpp/fast
+
+#=============================================================================
+# Target rules for targets named emotiv_epoc_generate_messages_eus
+
+# Build rule for target.
+emotiv_epoc_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 emotiv_epoc_generate_messages_eus
+.PHONY : emotiv_epoc_generate_messages_eus
+
+# fast build rule for target.
+emotiv_epoc_generate_messages_eus/fast:
+	$(MAKE) -f emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_eus.dir/build.make emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_eus.dir/build
+.PHONY : emotiv_epoc_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named emotiv_epoc_genlisp
+
+# Build rule for target.
+emotiv_epoc_genlisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 emotiv_epoc_genlisp
+.PHONY : emotiv_epoc_genlisp
+
+# fast build rule for target.
+emotiv_epoc_genlisp/fast:
+	$(MAKE) -f emotiv-ros/CMakeFiles/emotiv_epoc_genlisp.dir/build.make emotiv-ros/CMakeFiles/emotiv_epoc_genlisp.dir/build
+.PHONY : emotiv_epoc_genlisp/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -500,6 +669,19 @@ help:
 	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
+	@echo "... emotiv_epoc_genpy"
+	@echo "... emotiv_epoc_generate_messages_py"
+	@echo "... emotiv_epoc_gennodejs"
+	@echo "... _emotiv_epoc_generate_messages_check_deps_ChangeFrequency"
+	@echo "... emotiv_epoc_generate_messages_cpp"
+	@echo "... emotiv_epoc_generate_messages_nodejs"
+	@echo "... emotiv_epoc_generate_messages"
+	@echo "... emotiv_epoc_geneus"
+	@echo "... _emotiv_epoc_generate_messages_check_deps_EEGFrame"
+	@echo "... emotiv_epoc_generate_messages_lisp"
+	@echo "... emotiv_epoc_gencpp"
+	@echo "... emotiv_epoc_generate_messages_eus"
+	@echo "... emotiv_epoc_genlisp"
 .PHONY : help
 
 

@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package>
-  <name>centauri</name>
+  <name>centauri_hardware</name>
   <version>0.1.0</version>
   <description>The centauri_hardware package</description>
   <maintainer email="iletisim@kaaninan.net">Kaan Inan</maintainer>

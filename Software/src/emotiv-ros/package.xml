@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package>
+  <name>emotiv_epoc</name>
+  <version>0.1.0</version>
+  <description>A ROS driver for the Emotiv EPOC EEG headset.</description>
+  <maintainer email="allegrormc@gmail.com">Robert Chu</maintainer>
+  <license>BSD</license>
+
+  <!-- Build tool dependencies. -->
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- Build dependencies -->
+  <build_depend>rospy</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>message_generation</build_depend>
+
+  <!-- Runtime dependencies -->
+  <run_depend>rospy</run_depend>
+  <run_depend>std_msgs</run_depend>
+  <run_depend>message_runtime</run_depend>
+</package>

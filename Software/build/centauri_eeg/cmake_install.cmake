@@ -1,8 +1,8 @@
-# Install script for directory: /home/robot/Centauri/Software/ROS/src/centauri_eeg
+# Install script for directory: /home/robot/Centauri/Software/src/centauri_eeg
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/robot/Centauri/Software/ROS/install")
+  set(CMAKE_INSTALL_PREFIX "/home/robot/Centauri/Software/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,17 +33,17 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/robot/Centauri/Software/ROS/build/centauri_eeg/catkin_generated/installspace/centauri_eeg.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/robot/Centauri/Software/build/centauri_eeg/catkin_generated/installspace/centauri_eeg.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/centauri_eeg/cmake" TYPE FILE FILES
-    "/home/robot/Centauri/Software/ROS/build/centauri_eeg/catkin_generated/installspace/centauri_eegConfig.cmake"
-    "/home/robot/Centauri/Software/ROS/build/centauri_eeg/catkin_generated/installspace/centauri_eegConfig-version.cmake"
+    "/home/robot/Centauri/Software/build/centauri_eeg/catkin_generated/installspace/centauri_eegConfig.cmake"
+    "/home/robot/Centauri/Software/build/centauri_eeg/catkin_generated/installspace/centauri_eegConfig-version.cmake"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/centauri_eeg" TYPE FILE FILES "/home/robot/Centauri/Software/ROS/src/centauri_eeg/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/centauri_eeg" TYPE FILE FILES "/home/robot/Centauri/Software/src/centauri_eeg/package.xml")
 endif()
 

@@ -10,7 +10,7 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is GNU, found in "/home/robot/Centauri/Software/ROS/build/CMakeFiles/3.5.1/CompilerIdC/a.out"
+The C compiler identification is GNU, found in "/home/robot/Centauri/Software/build/CMakeFiles/3.5.1/CompilerIdC/a.out"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: /usr/bin/c++ 
@@ -23,33 +23,33 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is GNU, found in "/home/robot/Centauri/Software/ROS/build/CMakeFiles/3.5.1/CompilerIdCXX/a.out"
+The CXX compiler identification is GNU, found in "/home/robot/Centauri/Software/build/CMakeFiles/3.5.1/CompilerIdCXX/a.out"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: /home/robot/Centauri/Software/ROS/build/CMakeFiles/CMakeTmp
+Change Dir: /home/robot/Centauri/Software/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_0a5c4/fast"
-/usr/bin/make -f CMakeFiles/cmTC_0a5c4.dir/build.make CMakeFiles/cmTC_0a5c4.dir/build
-make[1]: Entering directory '/home/robot/Centauri/Software/ROS/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_0a5c4.dir/testCCompiler.c.o
-/usr/bin/cc     -o CMakeFiles/cmTC_0a5c4.dir/testCCompiler.c.o   -c /home/robot/Centauri/Software/ROS/build/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_0a5c4
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0a5c4.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_0a5c4.dir/testCCompiler.c.o  -o cmTC_0a5c4 -rdynamic 
-make[1]: Leaving directory '/home/robot/Centauri/Software/ROS/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_9ac68/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9ac68.dir/build.make CMakeFiles/cmTC_9ac68.dir/build
+make[1]: Entering directory '/home/robot/Centauri/Software/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9ac68.dir/testCCompiler.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_9ac68.dir/testCCompiler.c.o   -c /home/robot/Centauri/Software/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_9ac68
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9ac68.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_9ac68.dir/testCCompiler.c.o  -o cmTC_9ac68 -rdynamic 
+make[1]: Leaving directory '/home/robot/Centauri/Software/build/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /home/robot/Centauri/Software/ROS/build/CMakeFiles/CMakeTmp
+Change Dir: /home/robot/Centauri/Software/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_deffc/fast"
-/usr/bin/make -f CMakeFiles/cmTC_deffc.dir/build.make CMakeFiles/cmTC_deffc.dir/build
-make[1]: Entering directory '/home/robot/Centauri/Software/ROS/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_deffc.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc     -o CMakeFiles/cmTC_deffc.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.5/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_deffc
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_deffc.dir/link.txt --verbose=1
-/usr/bin/cc      -v CMakeFiles/cmTC_deffc.dir/CMakeCCompilerABI.c.o  -o cmTC_deffc -rdynamic  
+Run Build Command:"/usr/bin/make" "cmTC_c3c32/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c3c32.dir/build.make CMakeFiles/cmTC_c3c32.dir/build
+make[1]: Entering directory '/home/robot/Centauri/Software/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c3c32.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_c3c32.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.5/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_c3c32
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c3c32.dir/link.txt --verbose=1
+/usr/bin/cc      -v CMakeFiles/cmTC_c3c32.dir/CMakeCCompilerABI.c.o  -o cmTC_c3c32 -rdynamic  
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/arm-linux-gnueabihf/5/lto-wrapper
@@ -59,23 +59,23 @@ Thread model: posix
 gcc version 5.4.0 20160609 (Ubuntu/Linaro 5.4.0-6ubuntu1~16.04.4) 
 COMPILER_PATH=/usr/lib/gcc/arm-linux-gnueabihf/5/:/usr/lib/gcc/arm-linux-gnueabihf/5/:/usr/lib/gcc/arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/5/:/usr/lib/gcc/arm-linux-gnueabihf/
 LIBRARY_PATH=/usr/lib/gcc/arm-linux-gnueabihf/5/:/usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/5/../../../../lib/:/lib/arm-linux-gnueabihf/:/lib/../lib/:/usr/lib/arm-linux-gnueabihf/:/usr/lib/../lib/:/usr/lib/gcc/arm-linux-gnueabihf/5/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_deffc' '-rdynamic' '-march=armv7-a' '-mfloat-abi=hard' '-mfpu=vfpv3-d16' '-mthumb' '-mtls-dialect=gnu'
- /usr/lib/gcc/arm-linux-gnueabihf/5/collect2 -plugin /usr/lib/gcc/arm-linux-gnueabihf/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/arm-linux-gnueabihf/5/lto-wrapper -plugin-opt=-fresolution=/tmp/cct48gwR.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux-armhf.so.3 -X --hash-style=gnu --as-needed -m armelf_linux_eabi -z relro -o cmTC_deffc /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crt1.o /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o /usr/lib/gcc/arm-linux-gnueabihf/5/crtbegin.o -L/usr/lib/gcc/arm-linux-gnueabihf/5 -L/usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf -L/usr/lib/gcc/arm-linux-gnueabihf/5/../../../../lib -L/lib/arm-linux-gnueabihf -L/lib/../lib -L/usr/lib/arm-linux-gnueabihf -L/usr/lib/../lib -L/usr/lib/gcc/arm-linux-gnueabihf/5/../../.. CMakeFiles/cmTC_deffc.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/arm-linux-gnueabihf/5/crtend.o /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crtn.o
-make[1]: Leaving directory '/home/robot/Centauri/Software/ROS/build/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_c3c32' '-rdynamic' '-march=armv7-a' '-mfloat-abi=hard' '-mfpu=vfpv3-d16' '-mthumb' '-mtls-dialect=gnu'
+ /usr/lib/gcc/arm-linux-gnueabihf/5/collect2 -plugin /usr/lib/gcc/arm-linux-gnueabihf/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/arm-linux-gnueabihf/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccEjRpBf.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux-armhf.so.3 -X --hash-style=gnu --as-needed -m armelf_linux_eabi -z relro -o cmTC_c3c32 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crt1.o /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o /usr/lib/gcc/arm-linux-gnueabihf/5/crtbegin.o -L/usr/lib/gcc/arm-linux-gnueabihf/5 -L/usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf -L/usr/lib/gcc/arm-linux-gnueabihf/5/../../../../lib -L/lib/arm-linux-gnueabihf -L/lib/../lib -L/usr/lib/arm-linux-gnueabihf -L/usr/lib/../lib -L/usr/lib/gcc/arm-linux-gnueabihf/5/../../.. CMakeFiles/cmTC_c3c32.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/arm-linux-gnueabihf/5/crtend.o /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crtn.o
+make[1]: Leaving directory '/home/robot/Centauri/Software/build/CMakeFiles/CMakeTmp'
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/robot/Centauri/Software/ROS/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/robot/Centauri/Software/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_deffc/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_deffc.dir/build.make CMakeFiles/cmTC_deffc.dir/build]
-  ignore line: [make[1]: Entering directory '/home/robot/Centauri/Software/ROS/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_deffc.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc     -o CMakeFiles/cmTC_deffc.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.5/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_deffc]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_deffc.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc      -v CMakeFiles/cmTC_deffc.dir/CMakeCCompilerABI.c.o  -o cmTC_deffc -rdynamic  ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_c3c32/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_c3c32.dir/build.make CMakeFiles/cmTC_c3c32.dir/build]
+  ignore line: [make[1]: Entering directory '/home/robot/Centauri/Software/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_c3c32.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc     -o CMakeFiles/cmTC_c3c32.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.5/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_c3c32]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c3c32.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc      -v CMakeFiles/cmTC_c3c32.dir/CMakeCCompilerABI.c.o  -o cmTC_c3c32 -rdynamic  ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/arm-linux-gnueabihf/5/lto-wrapper]
@@ -85,13 +85,13 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 5.4.0 20160609 (Ubuntu/Linaro 5.4.0-6ubuntu1~16.04.4) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/arm-linux-gnueabihf/5/:/usr/lib/gcc/arm-linux-gnueabihf/5/:/usr/lib/gcc/arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/5/:/usr/lib/gcc/arm-linux-gnueabihf/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/arm-linux-gnueabihf/5/:/usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/5/../../../../lib/:/lib/arm-linux-gnueabihf/:/lib/../lib/:/usr/lib/arm-linux-gnueabihf/:/usr/lib/../lib/:/usr/lib/gcc/arm-linux-gnueabihf/5/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_deffc' '-rdynamic' '-march=armv7-a' '-mfloat-abi=hard' '-mfpu=vfpv3-d16' '-mthumb' '-mtls-dialect=gnu']
-  link line: [ /usr/lib/gcc/arm-linux-gnueabihf/5/collect2 -plugin /usr/lib/gcc/arm-linux-gnueabihf/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/arm-linux-gnueabihf/5/lto-wrapper -plugin-opt=-fresolution=/tmp/cct48gwR.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux-armhf.so.3 -X --hash-style=gnu --as-needed -m armelf_linux_eabi -z relro -o cmTC_deffc /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crt1.o /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o /usr/lib/gcc/arm-linux-gnueabihf/5/crtbegin.o -L/usr/lib/gcc/arm-linux-gnueabihf/5 -L/usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf -L/usr/lib/gcc/arm-linux-gnueabihf/5/../../../../lib -L/lib/arm-linux-gnueabihf -L/lib/../lib -L/usr/lib/arm-linux-gnueabihf -L/usr/lib/../lib -L/usr/lib/gcc/arm-linux-gnueabihf/5/../../.. CMakeFiles/cmTC_deffc.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/arm-linux-gnueabihf/5/crtend.o /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_c3c32' '-rdynamic' '-march=armv7-a' '-mfloat-abi=hard' '-mfpu=vfpv3-d16' '-mthumb' '-mtls-dialect=gnu']
+  link line: [ /usr/lib/gcc/arm-linux-gnueabihf/5/collect2 -plugin /usr/lib/gcc/arm-linux-gnueabihf/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/arm-linux-gnueabihf/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccEjRpBf.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux-armhf.so.3 -X --hash-style=gnu --as-needed -m armelf_linux_eabi -z relro -o cmTC_c3c32 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crt1.o /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o /usr/lib/gcc/arm-linux-gnueabihf/5/crtbegin.o -L/usr/lib/gcc/arm-linux-gnueabihf/5 -L/usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf -L/usr/lib/gcc/arm-linux-gnueabihf/5/../../../../lib -L/lib/arm-linux-gnueabihf -L/lib/../lib -L/usr/lib/arm-linux-gnueabihf -L/usr/lib/../lib -L/usr/lib/gcc/arm-linux-gnueabihf/5/../../.. CMakeFiles/cmTC_c3c32.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/arm-linux-gnueabihf/5/crtend.o /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crtn.o]
     arg [/usr/lib/gcc/arm-linux-gnueabihf/5/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/arm-linux-gnueabihf/5/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/arm-linux-gnueabihf/5/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/cct48gwR.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccEjRpBf.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -110,7 +110,7 @@ Parsed C implicit link information from above output:
     arg [armelf_linux_eabi] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_deffc] ==> ignore
+    arg [cmTC_c3c32] ==> ignore
     arg [/usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crt1.o] ==> ignore
     arg [/usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o] ==> ignore
     arg [/usr/lib/gcc/arm-linux-gnueabihf/5/crtbegin.o] ==> ignore
@@ -122,7 +122,7 @@ Parsed C implicit link information from above output:
     arg [-L/usr/lib/arm-linux-gnueabihf] ==> dir [/usr/lib/arm-linux-gnueabihf]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/arm-linux-gnueabihf/5/../../..] ==> dir [/usr/lib/gcc/arm-linux-gnueabihf/5/../../..]
-    arg [CMakeFiles/cmTC_deffc.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_c3c32.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -154,17 +154,17 @@ Parsed C implicit link information from above output:
 
 
 Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: /home/robot/Centauri/Software/ROS/build/CMakeFiles/CMakeTmp
+Change Dir: /home/robot/Centauri/Software/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_12aa7/fast"
-/usr/bin/make -f CMakeFiles/cmTC_12aa7.dir/build.make CMakeFiles/cmTC_12aa7.dir/build
-make[1]: Entering directory '/home/robot/Centauri/Software/ROS/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_12aa7.dir/feature_tests.c.o
-/usr/bin/cc    -std=c11 -o CMakeFiles/cmTC_12aa7.dir/feature_tests.c.o   -c /home/robot/Centauri/Software/ROS/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_12aa7
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_12aa7.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_12aa7.dir/feature_tests.c.o  -o cmTC_12aa7 -rdynamic 
-make[1]: Leaving directory '/home/robot/Centauri/Software/ROS/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_0e33e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0e33e.dir/build.make CMakeFiles/cmTC_0e33e.dir/build
+make[1]: Entering directory '/home/robot/Centauri/Software/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0e33e.dir/feature_tests.c.o
+/usr/bin/cc    -std=c11 -o CMakeFiles/cmTC_0e33e.dir/feature_tests.c.o   -c /home/robot/Centauri/Software/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_0e33e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0e33e.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_0e33e.dir/feature_tests.c.o  -o cmTC_0e33e -rdynamic 
+make[1]: Leaving directory '/home/robot/Centauri/Software/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -174,17 +174,17 @@ make[1]: Leaving directory '/home/robot/Centauri/Software/ROS/build/CMakeFiles/C
 
 
 Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: /home/robot/Centauri/Software/ROS/build/CMakeFiles/CMakeTmp
+Change Dir: /home/robot/Centauri/Software/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_a35cf/fast"
-/usr/bin/make -f CMakeFiles/cmTC_a35cf.dir/build.make CMakeFiles/cmTC_a35cf.dir/build
-make[1]: Entering directory '/home/robot/Centauri/Software/ROS/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_a35cf.dir/feature_tests.c.o
-/usr/bin/cc    -std=c99 -o CMakeFiles/cmTC_a35cf.dir/feature_tests.c.o   -c /home/robot/Centauri/Software/ROS/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_a35cf
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a35cf.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_a35cf.dir/feature_tests.c.o  -o cmTC_a35cf -rdynamic 
-make[1]: Leaving directory '/home/robot/Centauri/Software/ROS/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_32a80/fast"
+/usr/bin/make -f CMakeFiles/cmTC_32a80.dir/build.make CMakeFiles/cmTC_32a80.dir/build
+make[1]: Entering directory '/home/robot/Centauri/Software/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_32a80.dir/feature_tests.c.o
+/usr/bin/cc    -std=c99 -o CMakeFiles/cmTC_32a80.dir/feature_tests.c.o   -c /home/robot/Centauri/Software/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_32a80
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_32a80.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_32a80.dir/feature_tests.c.o  -o cmTC_32a80 -rdynamic 
+make[1]: Leaving directory '/home/robot/Centauri/Software/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -194,17 +194,17 @@ make[1]: Leaving directory '/home/robot/Centauri/Software/ROS/build/CMakeFiles/C
 
 
 Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: /home/robot/Centauri/Software/ROS/build/CMakeFiles/CMakeTmp
+Change Dir: /home/robot/Centauri/Software/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_12959/fast"
-/usr/bin/make -f CMakeFiles/cmTC_12959.dir/build.make CMakeFiles/cmTC_12959.dir/build
-make[1]: Entering directory '/home/robot/Centauri/Software/ROS/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_12959.dir/feature_tests.c.o
-/usr/bin/cc    -std=c90 -o CMakeFiles/cmTC_12959.dir/feature_tests.c.o   -c /home/robot/Centauri/Software/ROS/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_12959
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_12959.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_12959.dir/feature_tests.c.o  -o cmTC_12959 -rdynamic 
-make[1]: Leaving directory '/home/robot/Centauri/Software/ROS/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_cd33f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_cd33f.dir/build.make CMakeFiles/cmTC_cd33f.dir/build
+make[1]: Entering directory '/home/robot/Centauri/Software/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cd33f.dir/feature_tests.c.o
+/usr/bin/cc    -std=c90 -o CMakeFiles/cmTC_cd33f.dir/feature_tests.c.o   -c /home/robot/Centauri/Software/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_cd33f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cd33f.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_cd33f.dir/feature_tests.c.o  -o cmTC_cd33f -rdynamic 
+make[1]: Leaving directory '/home/robot/Centauri/Software/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -212,30 +212,30 @@ make[1]: Leaving directory '/home/robot/Centauri/Software/ROS/build/CMakeFiles/C
     Feature record: C_FEATURE:0c_static_assert
     Feature record: C_FEATURE:0c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /home/robot/Centauri/Software/ROS/build/CMakeFiles/CMakeTmp
+Change Dir: /home/robot/Centauri/Software/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_94703/fast"
-/usr/bin/make -f CMakeFiles/cmTC_94703.dir/build.make CMakeFiles/cmTC_94703.dir/build
-make[1]: Entering directory '/home/robot/Centauri/Software/ROS/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_94703.dir/testCXXCompiler.cxx.o
-/usr/bin/c++      -o CMakeFiles/cmTC_94703.dir/testCXXCompiler.cxx.o -c /home/robot/Centauri/Software/ROS/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_94703
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_94703.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTC_94703.dir/testCXXCompiler.cxx.o  -o cmTC_94703 -rdynamic 
-make[1]: Leaving directory '/home/robot/Centauri/Software/ROS/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_fec2a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_fec2a.dir/build.make CMakeFiles/cmTC_fec2a.dir/build
+make[1]: Entering directory '/home/robot/Centauri/Software/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_fec2a.dir/testCXXCompiler.cxx.o
+/usr/bin/c++      -o CMakeFiles/cmTC_fec2a.dir/testCXXCompiler.cxx.o -c /home/robot/Centauri/Software/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_fec2a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fec2a.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_fec2a.dir/testCXXCompiler.cxx.o  -o cmTC_fec2a -rdynamic 
+make[1]: Leaving directory '/home/robot/Centauri/Software/build/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /home/robot/Centauri/Software/ROS/build/CMakeFiles/CMakeTmp
+Change Dir: /home/robot/Centauri/Software/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_405dd/fast"
-/usr/bin/make -f CMakeFiles/cmTC_405dd.dir/build.make CMakeFiles/cmTC_405dd.dir/build
-make[1]: Entering directory '/home/robot/Centauri/Software/ROS/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_405dd.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/c++      -o CMakeFiles/cmTC_405dd.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.5/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_405dd
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_405dd.dir/link.txt --verbose=1
-/usr/bin/c++       -v CMakeFiles/cmTC_405dd.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_405dd -rdynamic  
+Run Build Command:"/usr/bin/make" "cmTC_1527e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1527e.dir/build.make CMakeFiles/cmTC_1527e.dir/build
+make[1]: Entering directory '/home/robot/Centauri/Software/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_1527e.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++      -o CMakeFiles/cmTC_1527e.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.5/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_1527e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1527e.dir/link.txt --verbose=1
+/usr/bin/c++       -v CMakeFiles/cmTC_1527e.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_1527e -rdynamic  
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/arm-linux-gnueabihf/5/lto-wrapper
@@ -245,23 +245,23 @@ Thread model: posix
 gcc version 5.4.0 20160609 (Ubuntu/Linaro 5.4.0-6ubuntu1~16.04.4) 
 COMPILER_PATH=/usr/lib/gcc/arm-linux-gnueabihf/5/:/usr/lib/gcc/arm-linux-gnueabihf/5/:/usr/lib/gcc/arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/5/:/usr/lib/gcc/arm-linux-gnueabihf/
 LIBRARY_PATH=/usr/lib/gcc/arm-linux-gnueabihf/5/:/usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/5/../../../../lib/:/lib/arm-linux-gnueabihf/:/lib/../lib/:/usr/lib/arm-linux-gnueabihf/:/usr/lib/../lib/:/usr/lib/gcc/arm-linux-gnueabihf/5/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_405dd' '-rdynamic' '-shared-libgcc' '-march=armv7-a' '-mfloat-abi=hard' '-mfpu=vfpv3-d16' '-mthumb' '-mtls-dialect=gnu'
- /usr/lib/gcc/arm-linux-gnueabihf/5/collect2 -plugin /usr/lib/gcc/arm-linux-gnueabihf/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/arm-linux-gnueabihf/5/lto-wrapper -plugin-opt=-fresolution=/tmp/cctP6sLK.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux-armhf.so.3 -X --hash-style=gnu --as-needed -m armelf_linux_eabi -z relro -o cmTC_405dd /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crt1.o /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o /usr/lib/gcc/arm-linux-gnueabihf/5/crtbegin.o -L/usr/lib/gcc/arm-linux-gnueabihf/5 -L/usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf -L/usr/lib/gcc/arm-linux-gnueabihf/5/../../../../lib -L/lib/arm-linux-gnueabihf -L/lib/../lib -L/usr/lib/arm-linux-gnueabihf -L/usr/lib/../lib -L/usr/lib/gcc/arm-linux-gnueabihf/5/../../.. CMakeFiles/cmTC_405dd.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/arm-linux-gnueabihf/5/crtend.o /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crtn.o
-make[1]: Leaving directory '/home/robot/Centauri/Software/ROS/build/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_1527e' '-rdynamic' '-shared-libgcc' '-march=armv7-a' '-mfloat-abi=hard' '-mfpu=vfpv3-d16' '-mthumb' '-mtls-dialect=gnu'
+ /usr/lib/gcc/arm-linux-gnueabihf/5/collect2 -plugin /usr/lib/gcc/arm-linux-gnueabihf/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/arm-linux-gnueabihf/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccM0a5id.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux-armhf.so.3 -X --hash-style=gnu --as-needed -m armelf_linux_eabi -z relro -o cmTC_1527e /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crt1.o /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o /usr/lib/gcc/arm-linux-gnueabihf/5/crtbegin.o -L/usr/lib/gcc/arm-linux-gnueabihf/5 -L/usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf -L/usr/lib/gcc/arm-linux-gnueabihf/5/../../../../lib -L/lib/arm-linux-gnueabihf -L/lib/../lib -L/usr/lib/arm-linux-gnueabihf -L/usr/lib/../lib -L/usr/lib/gcc/arm-linux-gnueabihf/5/../../.. CMakeFiles/cmTC_1527e.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/arm-linux-gnueabihf/5/crtend.o /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crtn.o
+make[1]: Leaving directory '/home/robot/Centauri/Software/build/CMakeFiles/CMakeTmp'
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/robot/Centauri/Software/ROS/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/robot/Centauri/Software/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_405dd/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_405dd.dir/build.make CMakeFiles/cmTC_405dd.dir/build]
-  ignore line: [make[1]: Entering directory '/home/robot/Centauri/Software/ROS/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_405dd.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/c++      -o CMakeFiles/cmTC_405dd.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.5/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_405dd]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_405dd.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/c++       -v CMakeFiles/cmTC_405dd.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_405dd -rdynamic  ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_1527e/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_1527e.dir/build.make CMakeFiles/cmTC_1527e.dir/build]
+  ignore line: [make[1]: Entering directory '/home/robot/Centauri/Software/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_1527e.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++      -o CMakeFiles/cmTC_1527e.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.5/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_1527e]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1527e.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++       -v CMakeFiles/cmTC_1527e.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_1527e -rdynamic  ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/arm-linux-gnueabihf/5/lto-wrapper]
@@ -271,13 +271,13 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 5.4.0 20160609 (Ubuntu/Linaro 5.4.0-6ubuntu1~16.04.4) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/arm-linux-gnueabihf/5/:/usr/lib/gcc/arm-linux-gnueabihf/5/:/usr/lib/gcc/arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/5/:/usr/lib/gcc/arm-linux-gnueabihf/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/arm-linux-gnueabihf/5/:/usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/5/../../../../lib/:/lib/arm-linux-gnueabihf/:/lib/../lib/:/usr/lib/arm-linux-gnueabihf/:/usr/lib/../lib/:/usr/lib/gcc/arm-linux-gnueabihf/5/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_405dd' '-rdynamic' '-shared-libgcc' '-march=armv7-a' '-mfloat-abi=hard' '-mfpu=vfpv3-d16' '-mthumb' '-mtls-dialect=gnu']
-  link line: [ /usr/lib/gcc/arm-linux-gnueabihf/5/collect2 -plugin /usr/lib/gcc/arm-linux-gnueabihf/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/arm-linux-gnueabihf/5/lto-wrapper -plugin-opt=-fresolution=/tmp/cctP6sLK.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux-armhf.so.3 -X --hash-style=gnu --as-needed -m armelf_linux_eabi -z relro -o cmTC_405dd /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crt1.o /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o /usr/lib/gcc/arm-linux-gnueabihf/5/crtbegin.o -L/usr/lib/gcc/arm-linux-gnueabihf/5 -L/usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf -L/usr/lib/gcc/arm-linux-gnueabihf/5/../../../../lib -L/lib/arm-linux-gnueabihf -L/lib/../lib -L/usr/lib/arm-linux-gnueabihf -L/usr/lib/../lib -L/usr/lib/gcc/arm-linux-gnueabihf/5/../../.. CMakeFiles/cmTC_405dd.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/arm-linux-gnueabihf/5/crtend.o /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_1527e' '-rdynamic' '-shared-libgcc' '-march=armv7-a' '-mfloat-abi=hard' '-mfpu=vfpv3-d16' '-mthumb' '-mtls-dialect=gnu']
+  link line: [ /usr/lib/gcc/arm-linux-gnueabihf/5/collect2 -plugin /usr/lib/gcc/arm-linux-gnueabihf/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/arm-linux-gnueabihf/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccM0a5id.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux-armhf.so.3 -X --hash-style=gnu --as-needed -m armelf_linux_eabi -z relro -o cmTC_1527e /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crt1.o /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o /usr/lib/gcc/arm-linux-gnueabihf/5/crtbegin.o -L/usr/lib/gcc/arm-linux-gnueabihf/5 -L/usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf -L/usr/lib/gcc/arm-linux-gnueabihf/5/../../../../lib -L/lib/arm-linux-gnueabihf -L/lib/../lib -L/usr/lib/arm-linux-gnueabihf -L/usr/lib/../lib -L/usr/lib/gcc/arm-linux-gnueabihf/5/../../.. CMakeFiles/cmTC_1527e.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/arm-linux-gnueabihf/5/crtend.o /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crtn.o]
     arg [/usr/lib/gcc/arm-linux-gnueabihf/5/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/arm-linux-gnueabihf/5/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/arm-linux-gnueabihf/5/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/cctP6sLK.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccM0a5id.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -296,7 +296,7 @@ Parsed CXX implicit link information from above output:
     arg [armelf_linux_eabi] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_405dd] ==> ignore
+    arg [cmTC_1527e] ==> ignore
     arg [/usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crt1.o] ==> ignore
     arg [/usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o] ==> ignore
     arg [/usr/lib/gcc/arm-linux-gnueabihf/5/crtbegin.o] ==> ignore
@@ -308,7 +308,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/usr/lib/arm-linux-gnueabihf] ==> dir [/usr/lib/arm-linux-gnueabihf]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/arm-linux-gnueabihf/5/../../..] ==> dir [/usr/lib/gcc/arm-linux-gnueabihf/5/../../..]
-    arg [CMakeFiles/cmTC_405dd.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_1527e.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -338,17 +338,17 @@ Parsed CXX implicit link information from above output:
 
 
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
-Change Dir: /home/robot/Centauri/Software/ROS/build/CMakeFiles/CMakeTmp
+Change Dir: /home/robot/Centauri/Software/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_147af/fast"
-/usr/bin/make -f CMakeFiles/cmTC_147af.dir/build.make CMakeFiles/cmTC_147af.dir/build
-make[1]: Entering directory '/home/robot/Centauri/Software/ROS/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_147af.dir/feature_tests.cxx.o
-/usr/bin/c++     -std=c++14 -o CMakeFiles/cmTC_147af.dir/feature_tests.cxx.o -c /home/robot/Centauri/Software/ROS/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_147af
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_147af.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTC_147af.dir/feature_tests.cxx.o  -o cmTC_147af -rdynamic 
-make[1]: Leaving directory '/home/robot/Centauri/Software/ROS/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_ba9af/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ba9af.dir/build.make CMakeFiles/cmTC_ba9af.dir/build
+make[1]: Entering directory '/home/robot/Centauri/Software/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ba9af.dir/feature_tests.cxx.o
+/usr/bin/c++     -std=c++14 -o CMakeFiles/cmTC_ba9af.dir/feature_tests.cxx.o -c /home/robot/Centauri/Software/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_ba9af
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ba9af.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_ba9af.dir/feature_tests.cxx.o  -o cmTC_ba9af -rdynamic 
+make[1]: Leaving directory '/home/robot/Centauri/Software/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -411,17 +411,17 @@ make[1]: Leaving directory '/home/robot/Centauri/Software/ROS/build/CMakeFiles/C
 
 
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: /home/robot/Centauri/Software/ROS/build/CMakeFiles/CMakeTmp
+Change Dir: /home/robot/Centauri/Software/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_38c43/fast"
-/usr/bin/make -f CMakeFiles/cmTC_38c43.dir/build.make CMakeFiles/cmTC_38c43.dir/build
-make[1]: Entering directory '/home/robot/Centauri/Software/ROS/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_38c43.dir/feature_tests.cxx.o
-/usr/bin/c++     -std=c++11 -o CMakeFiles/cmTC_38c43.dir/feature_tests.cxx.o -c /home/robot/Centauri/Software/ROS/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_38c43
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_38c43.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTC_38c43.dir/feature_tests.cxx.o  -o cmTC_38c43 -rdynamic 
-make[1]: Leaving directory '/home/robot/Centauri/Software/ROS/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_c4ed2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c4ed2.dir/build.make CMakeFiles/cmTC_c4ed2.dir/build
+make[1]: Entering directory '/home/robot/Centauri/Software/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c4ed2.dir/feature_tests.cxx.o
+/usr/bin/c++     -std=c++11 -o CMakeFiles/cmTC_c4ed2.dir/feature_tests.cxx.o -c /home/robot/Centauri/Software/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_c4ed2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c4ed2.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_c4ed2.dir/feature_tests.cxx.o  -o cmTC_c4ed2 -rdynamic 
+make[1]: Leaving directory '/home/robot/Centauri/Software/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -484,17 +484,17 @@ make[1]: Leaving directory '/home/robot/Centauri/Software/ROS/build/CMakeFiles/C
 
 
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: /home/robot/Centauri/Software/ROS/build/CMakeFiles/CMakeTmp
+Change Dir: /home/robot/Centauri/Software/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_41a61/fast"
-/usr/bin/make -f CMakeFiles/cmTC_41a61.dir/build.make CMakeFiles/cmTC_41a61.dir/build
-make[1]: Entering directory '/home/robot/Centauri/Software/ROS/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_41a61.dir/feature_tests.cxx.o
-/usr/bin/c++     -std=c++98 -o CMakeFiles/cmTC_41a61.dir/feature_tests.cxx.o -c /home/robot/Centauri/Software/ROS/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_41a61
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_41a61.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTC_41a61.dir/feature_tests.cxx.o  -o cmTC_41a61 -rdynamic 
-make[1]: Leaving directory '/home/robot/Centauri/Software/ROS/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_a5d44/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a5d44.dir/build.make CMakeFiles/cmTC_a5d44.dir/build
+make[1]: Entering directory '/home/robot/Centauri/Software/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_a5d44.dir/feature_tests.cxx.o
+/usr/bin/c++     -std=c++98 -o CMakeFiles/cmTC_a5d44.dir/feature_tests.cxx.o -c /home/robot/Centauri/Software/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_a5d44
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a5d44.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_a5d44.dir/feature_tests.cxx.o  -o cmTC_a5d44 -rdynamic 
+make[1]: Leaving directory '/home/robot/Centauri/Software/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -555,30 +555,30 @@ make[1]: Leaving directory '/home/robot/Centauri/Software/ROS/build/CMakeFiles/C
     Feature record: CXX_FEATURE:0cxx_variadic_macros
     Feature record: CXX_FEATURE:0cxx_variadic_templates
 Determining if the include file pthread.h exists passed with the following output:
-Change Dir: /home/robot/Centauri/Software/ROS/build/CMakeFiles/CMakeTmp
+Change Dir: /home/robot/Centauri/Software/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_a08eb/fast"
-/usr/bin/make -f CMakeFiles/cmTC_a08eb.dir/build.make CMakeFiles/cmTC_a08eb.dir/build
-make[1]: Entering directory '/home/robot/Centauri/Software/ROS/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_a08eb.dir/CheckIncludeFile.c.o
-/usr/bin/cc     -o CMakeFiles/cmTC_a08eb.dir/CheckIncludeFile.c.o   -c /home/robot/Centauri/Software/ROS/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_a08eb
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a08eb.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_a08eb.dir/CheckIncludeFile.c.o  -o cmTC_a08eb -rdynamic 
-make[1]: Leaving directory '/home/robot/Centauri/Software/ROS/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_85fb0/fast"
+/usr/bin/make -f CMakeFiles/cmTC_85fb0.dir/build.make CMakeFiles/cmTC_85fb0.dir/build
+make[1]: Entering directory '/home/robot/Centauri/Software/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_85fb0.dir/CheckIncludeFile.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_85fb0.dir/CheckIncludeFile.c.o   -c /home/robot/Centauri/Software/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_85fb0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_85fb0.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_85fb0.dir/CheckIncludeFile.c.o  -o cmTC_85fb0 -rdynamic 
+make[1]: Leaving directory '/home/robot/Centauri/Software/build/CMakeFiles/CMakeTmp'
 
 
 Determining if the function pthread_create exists in the pthread passed with the following output:
-Change Dir: /home/robot/Centauri/Software/ROS/build/CMakeFiles/CMakeTmp
+Change Dir: /home/robot/Centauri/Software/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_78497/fast"
-/usr/bin/make -f CMakeFiles/cmTC_78497.dir/build.make CMakeFiles/cmTC_78497.dir/build
-make[1]: Entering directory '/home/robot/Centauri/Software/ROS/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_78497.dir/CheckFunctionExists.c.o
-/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_78497.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
-Linking C executable cmTC_78497
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_78497.dir/link.txt --verbose=1
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_78497.dir/CheckFunctionExists.c.o  -o cmTC_78497 -rdynamic -lpthread 
-make[1]: Leaving directory '/home/robot/Centauri/Software/ROS/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_8c596/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8c596.dir/build.make CMakeFiles/cmTC_8c596.dir/build
+make[1]: Entering directory '/home/robot/Centauri/Software/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8c596.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_8c596.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_8c596
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8c596.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_8c596.dir/CheckFunctionExists.c.o  -o cmTC_8c596 -rdynamic -lpthread 
+make[1]: Leaving directory '/home/robot/Centauri/Software/build/CMakeFiles/CMakeTmp'
 
 

@@ -1,6 +1,6 @@
 set(_CATKIN_CURRENT_PACKAGE "centauri_hardware")
-set(centauri_hardware_VERSION "0.0.0")
-set(centauri_hardware_MAINTAINER "robot <robot@todo.todo>")
+set(centauri_hardware_VERSION "0.1.0")
+set(centauri_hardware_MAINTAINER "Kaan Inan <iletisim@kaaninan.net>")
 set(centauri_hardware_PACKAGE_FORMAT "1")
 set(centauri_hardware_BUILD_DEPENDS "rospy" "std_msgs")
 set(centauri_hardware_BUILD_EXPORT_DEPENDS "rospy" "std_msgs")

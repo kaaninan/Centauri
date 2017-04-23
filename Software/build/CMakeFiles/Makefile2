@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/robot/Centauri/Software/ROS/src
+CMAKE_SOURCE_DIR = /home/robot/Centauri/Software/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/robot/Centauri/Software/ROS/build
+CMAKE_BINARY_DIR = /home/robot/Centauri/Software/build
 
 #=============================================================================
 # Target rules for target CMakeFiles/clean_test_results.dir
@@ -66,14 +66,14 @@ CMAKE_BINARY_DIR = /home/robot/Centauri/Software/ROS/build
 CMakeFiles/clean_test_results.dir/all:
 	$(MAKE) -f CMakeFiles/clean_test_results.dir/build.make CMakeFiles/clean_test_results.dir/depend
 	$(MAKE) -f CMakeFiles/clean_test_results.dir/build.make CMakeFiles/clean_test_results.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/Centauri/Software/ROS/build/CMakeFiles --progress-num= "Built target clean_test_results"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/Centauri/Software/build/CMakeFiles --progress-num= "Built target clean_test_results"
 .PHONY : CMakeFiles/clean_test_results.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/clean_test_results.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/ROS/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/clean_test_results.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/ROS/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/build/CMakeFiles 0
 .PHONY : CMakeFiles/clean_test_results.dir/rule
 
 # Convenience name for target.
@@ -98,14 +98,14 @@ clean: CMakeFiles/clean_test_results.dir/clean
 CMakeFiles/run_tests.dir/all:
 	$(MAKE) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/depend
 	$(MAKE) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/Centauri/Software/ROS/build/CMakeFiles --progress-num= "Built target run_tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/Centauri/Software/build/CMakeFiles --progress-num= "Built target run_tests"
 .PHONY : CMakeFiles/run_tests.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/run_tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/ROS/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/run_tests.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/ROS/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/build/CMakeFiles 0
 .PHONY : CMakeFiles/run_tests.dir/rule
 
 # Convenience name for target.
@@ -130,14 +130,14 @@ clean: CMakeFiles/run_tests.dir/clean
 CMakeFiles/doxygen.dir/all:
 	$(MAKE) -f CMakeFiles/doxygen.dir/build.make CMakeFiles/doxygen.dir/depend
 	$(MAKE) -f CMakeFiles/doxygen.dir/build.make CMakeFiles/doxygen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/Centauri/Software/ROS/build/CMakeFiles --progress-num= "Built target doxygen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/Centauri/Software/build/CMakeFiles --progress-num= "Built target doxygen"
 .PHONY : CMakeFiles/doxygen.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/doxygen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/ROS/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/doxygen.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/ROS/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/build/CMakeFiles 0
 .PHONY : CMakeFiles/doxygen.dir/rule
 
 # Convenience name for target.
@@ -162,14 +162,14 @@ clean: CMakeFiles/doxygen.dir/clean
 CMakeFiles/tests.dir/all:
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/depend
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/Centauri/Software/ROS/build/CMakeFiles --progress-num= "Built target tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/Centauri/Software/build/CMakeFiles --progress-num= "Built target tests"
 .PHONY : CMakeFiles/tests.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/ROS/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/tests.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/ROS/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/build/CMakeFiles 0
 .PHONY : CMakeFiles/tests.dir/rule
 
 # Convenience name for target.
@@ -194,14 +194,14 @@ clean: CMakeFiles/tests.dir/clean
 CMakeFiles/download_extra_data.dir/all:
 	$(MAKE) -f CMakeFiles/download_extra_data.dir/build.make CMakeFiles/download_extra_data.dir/depend
 	$(MAKE) -f CMakeFiles/download_extra_data.dir/build.make CMakeFiles/download_extra_data.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/Centauri/Software/ROS/build/CMakeFiles --progress-num= "Built target download_extra_data"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/Centauri/Software/build/CMakeFiles --progress-num= "Built target download_extra_data"
 .PHONY : CMakeFiles/download_extra_data.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/download_extra_data.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/ROS/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/download_extra_data.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/ROS/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/build/CMakeFiles 0
 .PHONY : CMakeFiles/download_extra_data.dir/rule
 
 # Convenience name for target.
@@ -245,14 +245,14 @@ gtest/preinstall:
 gtest/CMakeFiles/gtest.dir/all:
 	$(MAKE) -f gtest/CMakeFiles/gtest.dir/build.make gtest/CMakeFiles/gtest.dir/depend
 	$(MAKE) -f gtest/CMakeFiles/gtest.dir/build.make gtest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/Centauri/Software/ROS/build/CMakeFiles --progress-num=1,2 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/Centauri/Software/build/CMakeFiles --progress-num=14,15 "Built target gtest"
 .PHONY : gtest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
 gtest/CMakeFiles/gtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/ROS/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 gtest/CMakeFiles/gtest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/ROS/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/build/CMakeFiles 0
 .PHONY : gtest/CMakeFiles/gtest.dir/rule
 
 # Convenience name for target.
@@ -277,14 +277,14 @@ clean: gtest/CMakeFiles/gtest.dir/clean
 gtest/CMakeFiles/gtest_main.dir/all: gtest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/CMakeFiles/gtest_main.dir/build.make gtest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) -f gtest/CMakeFiles/gtest_main.dir/build.make gtest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/Centauri/Software/ROS/build/CMakeFiles --progress-num=3,4 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/Centauri/Software/build/CMakeFiles --progress-num=16,17 "Built target gtest_main"
 .PHONY : gtest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
 gtest/CMakeFiles/gtest_main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/ROS/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 gtest/CMakeFiles/gtest_main.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/ROS/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/build/CMakeFiles 0
 .PHONY : gtest/CMakeFiles/gtest_main.dir/rule
 
 # Convenience name for target.
@@ -327,14 +327,14 @@ centauri/preinstall:
 centauri/CMakeFiles/_catkin_empty_exported_target.dir/all:
 	$(MAKE) -f centauri/CMakeFiles/_catkin_empty_exported_target.dir/build.make centauri/CMakeFiles/_catkin_empty_exported_target.dir/depend
 	$(MAKE) -f centauri/CMakeFiles/_catkin_empty_exported_target.dir/build.make centauri/CMakeFiles/_catkin_empty_exported_target.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/Centauri/Software/ROS/build/CMakeFiles --progress-num= "Built target _catkin_empty_exported_target"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/Centauri/Software/build/CMakeFiles --progress-num= "Built target _catkin_empty_exported_target"
 .PHONY : centauri/CMakeFiles/_catkin_empty_exported_target.dir/all
 
 # Build rule for subdir invocation for target.
 centauri/CMakeFiles/_catkin_empty_exported_target.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/ROS/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 centauri/CMakeFiles/_catkin_empty_exported_target.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/ROS/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/build/CMakeFiles 0
 .PHONY : centauri/CMakeFiles/_catkin_empty_exported_target.dir/rule
 
 # Convenience name for target.
@@ -391,14 +391,14 @@ centauri_bridge/preinstall:
 centauri_bridge/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all:
 	$(MAKE) -f centauri_bridge/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make centauri_bridge/CMakeFiles/std_msgs_generate_messages_nodejs.dir/depend
 	$(MAKE) -f centauri_bridge/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make centauri_bridge/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/Centauri/Software/ROS/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/Centauri/Software/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_nodejs"
 .PHONY : centauri_bridge/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
 centauri_bridge/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/ROS/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 centauri_bridge/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/ROS/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/build/CMakeFiles 0
 .PHONY : centauri_bridge/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -423,14 +423,14 @@ clean: centauri_bridge/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
 centauri_bridge/CMakeFiles/std_msgs_generate_messages_lisp.dir/all:
 	$(MAKE) -f centauri_bridge/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make centauri_bridge/CMakeFiles/std_msgs_generate_messages_lisp.dir/depend
 	$(MAKE) -f centauri_bridge/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make centauri_bridge/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/Centauri/Software/ROS/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/Centauri/Software/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_lisp"
 .PHONY : centauri_bridge/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 centauri_bridge/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/ROS/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 centauri_bridge/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/ROS/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/build/CMakeFiles 0
 .PHONY : centauri_bridge/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -455,14 +455,14 @@ clean: centauri_bridge/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
 centauri_bridge/CMakeFiles/std_msgs_generate_messages_eus.dir/all:
 	$(MAKE) -f centauri_bridge/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make centauri_bridge/CMakeFiles/std_msgs_generate_messages_eus.dir/depend
 	$(MAKE) -f centauri_bridge/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make centauri_bridge/CMakeFiles/std_msgs_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/Centauri/Software/ROS/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/Centauri/Software/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_eus"
 .PHONY : centauri_bridge/CMakeFiles/std_msgs_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
 centauri_bridge/CMakeFiles/std_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/ROS/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 centauri_bridge/CMakeFiles/std_msgs_generate_messages_eus.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/ROS/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/build/CMakeFiles 0
 .PHONY : centauri_bridge/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -487,14 +487,14 @@ clean: centauri_bridge/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
 centauri_bridge/CMakeFiles/roscpp_generate_messages_nodejs.dir/all:
 	$(MAKE) -f centauri_bridge/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make centauri_bridge/CMakeFiles/roscpp_generate_messages_nodejs.dir/depend
 	$(MAKE) -f centauri_bridge/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make centauri_bridge/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/Centauri/Software/ROS/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/Centauri/Software/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_nodejs"
 .PHONY : centauri_bridge/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
 centauri_bridge/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/ROS/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 centauri_bridge/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/ROS/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/build/CMakeFiles 0
 .PHONY : centauri_bridge/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -519,14 +519,14 @@ clean: centauri_bridge/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
 centauri_bridge/CMakeFiles/roscpp_generate_messages_lisp.dir/all:
 	$(MAKE) -f centauri_bridge/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make centauri_bridge/CMakeFiles/roscpp_generate_messages_lisp.dir/depend
 	$(MAKE) -f centauri_bridge/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make centauri_bridge/CMakeFiles/roscpp_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/Centauri/Software/ROS/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/Centauri/Software/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_lisp"
 .PHONY : centauri_bridge/CMakeFiles/roscpp_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 centauri_bridge/CMakeFiles/roscpp_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/ROS/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 centauri_bridge/CMakeFiles/roscpp_generate_messages_lisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/ROS/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/build/CMakeFiles 0
 .PHONY : centauri_bridge/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -551,14 +551,14 @@ clean: centauri_bridge/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
 centauri_bridge/CMakeFiles/std_msgs_generate_messages_py.dir/all:
 	$(MAKE) -f centauri_bridge/CMakeFiles/std_msgs_generate_messages_py.dir/build.make centauri_bridge/CMakeFiles/std_msgs_generate_messages_py.dir/depend
 	$(MAKE) -f centauri_bridge/CMakeFiles/std_msgs_generate_messages_py.dir/build.make centauri_bridge/CMakeFiles/std_msgs_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/Centauri/Software/ROS/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/Centauri/Software/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_py"
 .PHONY : centauri_bridge/CMakeFiles/std_msgs_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
 centauri_bridge/CMakeFiles/std_msgs_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/ROS/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 centauri_bridge/CMakeFiles/std_msgs_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/ROS/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/build/CMakeFiles 0
 .PHONY : centauri_bridge/CMakeFiles/std_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -583,14 +583,14 @@ clean: centauri_bridge/CMakeFiles/std_msgs_generate_messages_py.dir/clean
 centauri_bridge/CMakeFiles/roscpp_generate_messages_eus.dir/all:
 	$(MAKE) -f centauri_bridge/CMakeFiles/roscpp_generate_messages_eus.dir/build.make centauri_bridge/CMakeFiles/roscpp_generate_messages_eus.dir/depend
 	$(MAKE) -f centauri_bridge/CMakeFiles/roscpp_generate_messages_eus.dir/build.make centauri_bridge/CMakeFiles/roscpp_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/Centauri/Software/ROS/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/Centauri/Software/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_eus"
 .PHONY : centauri_bridge/CMakeFiles/roscpp_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
 centauri_bridge/CMakeFiles/roscpp_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/ROS/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 centauri_bridge/CMakeFiles/roscpp_generate_messages_eus.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/ROS/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/build/CMakeFiles 0
 .PHONY : centauri_bridge/CMakeFiles/roscpp_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -615,14 +615,14 @@ clean: centauri_bridge/CMakeFiles/roscpp_generate_messages_eus.dir/clean
 centauri_bridge/CMakeFiles/roscpp_generate_messages_cpp.dir/all:
 	$(MAKE) -f centauri_bridge/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make centauri_bridge/CMakeFiles/roscpp_generate_messages_cpp.dir/depend
 	$(MAKE) -f centauri_bridge/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make centauri_bridge/CMakeFiles/roscpp_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/Centauri/Software/ROS/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/Centauri/Software/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_cpp"
 .PHONY : centauri_bridge/CMakeFiles/roscpp_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 centauri_bridge/CMakeFiles/roscpp_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/ROS/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 centauri_bridge/CMakeFiles/roscpp_generate_messages_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/ROS/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/build/CMakeFiles 0
 .PHONY : centauri_bridge/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -647,14 +647,14 @@ clean: centauri_bridge/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
 centauri_bridge/CMakeFiles/std_msgs_generate_messages_cpp.dir/all:
 	$(MAKE) -f centauri_bridge/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make centauri_bridge/CMakeFiles/std_msgs_generate_messages_cpp.dir/depend
 	$(MAKE) -f centauri_bridge/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make centauri_bridge/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/Centauri/Software/ROS/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/Centauri/Software/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_cpp"
 .PHONY : centauri_bridge/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 centauri_bridge/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/ROS/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 centauri_bridge/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/ROS/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/build/CMakeFiles 0
 .PHONY : centauri_bridge/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -679,14 +679,14 @@ clean: centauri_bridge/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
 centauri_bridge/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all:
 	$(MAKE) -f centauri_bridge/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make centauri_bridge/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/depend
 	$(MAKE) -f centauri_bridge/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make centauri_bridge/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/Centauri/Software/ROS/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/Centauri/Software/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_nodejs"
 .PHONY : centauri_bridge/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
 centauri_bridge/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/ROS/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 centauri_bridge/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/ROS/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/build/CMakeFiles 0
 .PHONY : centauri_bridge/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -711,14 +711,14 @@ clean: centauri_bridge/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/cle
 centauri_bridge/CMakeFiles/roscpp_generate_messages_py.dir/all:
 	$(MAKE) -f centauri_bridge/CMakeFiles/roscpp_generate_messages_py.dir/build.make centauri_bridge/CMakeFiles/roscpp_generate_messages_py.dir/depend
 	$(MAKE) -f centauri_bridge/CMakeFiles/roscpp_generate_messages_py.dir/build.make centauri_bridge/CMakeFiles/roscpp_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/Centauri/Software/ROS/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/Centauri/Software/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_py"
 .PHONY : centauri_bridge/CMakeFiles/roscpp_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
 centauri_bridge/CMakeFiles/roscpp_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/ROS/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 centauri_bridge/CMakeFiles/roscpp_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/ROS/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/build/CMakeFiles 0
 .PHONY : centauri_bridge/CMakeFiles/roscpp_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -743,14 +743,14 @@ clean: centauri_bridge/CMakeFiles/roscpp_generate_messages_py.dir/clean
 centauri_bridge/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all:
 	$(MAKE) -f centauri_bridge/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make centauri_bridge/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/depend
 	$(MAKE) -f centauri_bridge/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make centauri_bridge/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/Centauri/Software/ROS/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/Centauri/Software/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_py"
 .PHONY : centauri_bridge/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
 centauri_bridge/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/ROS/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 centauri_bridge/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/ROS/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/build/CMakeFiles 0
 .PHONY : centauri_bridge/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -775,14 +775,14 @@ clean: centauri_bridge/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
 centauri_bridge/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all:
 	$(MAKE) -f centauri_bridge/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make centauri_bridge/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/depend
 	$(MAKE) -f centauri_bridge/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make centauri_bridge/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/Centauri/Software/ROS/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/Centauri/Software/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_cpp"
 .PHONY : centauri_bridge/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 centauri_bridge/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/ROS/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 centauri_bridge/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/ROS/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/build/CMakeFiles 0
 .PHONY : centauri_bridge/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -807,14 +807,14 @@ clean: centauri_bridge/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
 centauri_bridge/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all:
 	$(MAKE) -f centauri_bridge/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make centauri_bridge/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/depend
 	$(MAKE) -f centauri_bridge/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make centauri_bridge/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/Centauri/Software/ROS/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/Centauri/Software/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_eus"
 .PHONY : centauri_bridge/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
 centauri_bridge/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/ROS/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 centauri_bridge/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/ROS/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/build/CMakeFiles 0
 .PHONY : centauri_bridge/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -839,14 +839,14 @@ clean: centauri_bridge/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
 centauri_bridge/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all:
 	$(MAKE) -f centauri_bridge/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make centauri_bridge/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/depend
 	$(MAKE) -f centauri_bridge/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make centauri_bridge/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/Centauri/Software/ROS/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/Centauri/Software/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_lisp"
 .PHONY : centauri_bridge/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 centauri_bridge/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/ROS/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 centauri_bridge/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/ROS/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/build/CMakeFiles 0
 .PHONY : centauri_bridge/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -991,22 +991,469 @@ centauri_sound/preinstall:
 .PHONY : centauri_sound/preinstall
 
 #=============================================================================
-# Directory level rules for directory centauri_start
+# Directory level rules for directory emotiv-ros
 
 # Convenience name for "all" pass in the directory.
-centauri_start/all:
+emotiv-ros/all: emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages.dir/all
 
-.PHONY : centauri_start/all
+.PHONY : emotiv-ros/all
 
 # Convenience name for "clean" pass in the directory.
-centauri_start/clean:
+emotiv-ros/clean: emotiv-ros/CMakeFiles/emotiv_epoc_genpy.dir/clean
+emotiv-ros/clean: emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_py.dir/clean
+emotiv-ros/clean: emotiv-ros/CMakeFiles/emotiv_epoc_gennodejs.dir/clean
+emotiv-ros/clean: emotiv-ros/CMakeFiles/_emotiv_epoc_generate_messages_check_deps_ChangeFrequency.dir/clean
+emotiv-ros/clean: emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_cpp.dir/clean
+emotiv-ros/clean: emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_nodejs.dir/clean
+emotiv-ros/clean: emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages.dir/clean
+emotiv-ros/clean: emotiv-ros/CMakeFiles/emotiv_epoc_geneus.dir/clean
+emotiv-ros/clean: emotiv-ros/CMakeFiles/_emotiv_epoc_generate_messages_check_deps_EEGFrame.dir/clean
+emotiv-ros/clean: emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_lisp.dir/clean
+emotiv-ros/clean: emotiv-ros/CMakeFiles/emotiv_epoc_gencpp.dir/clean
+emotiv-ros/clean: emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_eus.dir/clean
+emotiv-ros/clean: emotiv-ros/CMakeFiles/emotiv_epoc_genlisp.dir/clean
 
-.PHONY : centauri_start/clean
+.PHONY : emotiv-ros/clean
 
 # Convenience name for "preinstall" pass in the directory.
-centauri_start/preinstall:
+emotiv-ros/preinstall:
 
-.PHONY : centauri_start/preinstall
+.PHONY : emotiv-ros/preinstall
+
+#=============================================================================
+# Target rules for target emotiv-ros/CMakeFiles/emotiv_epoc_genpy.dir
+
+# All Build rule for target.
+emotiv-ros/CMakeFiles/emotiv_epoc_genpy.dir/all: emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_py.dir/all
+	$(MAKE) -f emotiv-ros/CMakeFiles/emotiv_epoc_genpy.dir/build.make emotiv-ros/CMakeFiles/emotiv_epoc_genpy.dir/depend
+	$(MAKE) -f emotiv-ros/CMakeFiles/emotiv_epoc_genpy.dir/build.make emotiv-ros/CMakeFiles/emotiv_epoc_genpy.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/Centauri/Software/build/CMakeFiles --progress-num= "Built target emotiv_epoc_genpy"
+.PHONY : emotiv-ros/CMakeFiles/emotiv_epoc_genpy.dir/all
+
+# Build rule for subdir invocation for target.
+emotiv-ros/CMakeFiles/emotiv_epoc_genpy.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/build/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 emotiv-ros/CMakeFiles/emotiv_epoc_genpy.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/build/CMakeFiles 0
+.PHONY : emotiv-ros/CMakeFiles/emotiv_epoc_genpy.dir/rule
+
+# Convenience name for target.
+emotiv_epoc_genpy: emotiv-ros/CMakeFiles/emotiv_epoc_genpy.dir/rule
+
+.PHONY : emotiv_epoc_genpy
+
+# clean rule for target.
+emotiv-ros/CMakeFiles/emotiv_epoc_genpy.dir/clean:
+	$(MAKE) -f emotiv-ros/CMakeFiles/emotiv_epoc_genpy.dir/build.make emotiv-ros/CMakeFiles/emotiv_epoc_genpy.dir/clean
+.PHONY : emotiv-ros/CMakeFiles/emotiv_epoc_genpy.dir/clean
+
+# clean rule for target.
+clean: emotiv-ros/CMakeFiles/emotiv_epoc_genpy.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_py.dir
+
+# All Build rule for target.
+emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_py.dir/all: centauri_bridge/CMakeFiles/std_msgs_generate_messages_py.dir/all
+emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_py.dir/all: emotiv-ros/CMakeFiles/_emotiv_epoc_generate_messages_check_deps_ChangeFrequency.dir/all
+emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_py.dir/all: emotiv-ros/CMakeFiles/_emotiv_epoc_generate_messages_check_deps_EEGFrame.dir/all
+	$(MAKE) -f emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_py.dir/build.make emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_py.dir/depend
+	$(MAKE) -f emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_py.dir/build.make emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/Centauri/Software/build/CMakeFiles --progress-num=10,11,12,13 "Built target emotiv_epoc_generate_messages_py"
+.PHONY : emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/build/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/build/CMakeFiles 0
+.PHONY : emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_py.dir/rule
+
+# Convenience name for target.
+emotiv_epoc_generate_messages_py: emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_py.dir/rule
+
+.PHONY : emotiv_epoc_generate_messages_py
+
+# clean rule for target.
+emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_py.dir/clean:
+	$(MAKE) -f emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_py.dir/build.make emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_py.dir/clean
+.PHONY : emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_py.dir/clean
+
+# clean rule for target.
+clean: emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_py.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target emotiv-ros/CMakeFiles/emotiv_epoc_gennodejs.dir
+
+# All Build rule for target.
+emotiv-ros/CMakeFiles/emotiv_epoc_gennodejs.dir/all: emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_nodejs.dir/all
+	$(MAKE) -f emotiv-ros/CMakeFiles/emotiv_epoc_gennodejs.dir/build.make emotiv-ros/CMakeFiles/emotiv_epoc_gennodejs.dir/depend
+	$(MAKE) -f emotiv-ros/CMakeFiles/emotiv_epoc_gennodejs.dir/build.make emotiv-ros/CMakeFiles/emotiv_epoc_gennodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/Centauri/Software/build/CMakeFiles --progress-num= "Built target emotiv_epoc_gennodejs"
+.PHONY : emotiv-ros/CMakeFiles/emotiv_epoc_gennodejs.dir/all
+
+# Build rule for subdir invocation for target.
+emotiv-ros/CMakeFiles/emotiv_epoc_gennodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 emotiv-ros/CMakeFiles/emotiv_epoc_gennodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/build/CMakeFiles 0
+.PHONY : emotiv-ros/CMakeFiles/emotiv_epoc_gennodejs.dir/rule
+
+# Convenience name for target.
+emotiv_epoc_gennodejs: emotiv-ros/CMakeFiles/emotiv_epoc_gennodejs.dir/rule
+
+.PHONY : emotiv_epoc_gennodejs
+
+# clean rule for target.
+emotiv-ros/CMakeFiles/emotiv_epoc_gennodejs.dir/clean:
+	$(MAKE) -f emotiv-ros/CMakeFiles/emotiv_epoc_gennodejs.dir/build.make emotiv-ros/CMakeFiles/emotiv_epoc_gennodejs.dir/clean
+.PHONY : emotiv-ros/CMakeFiles/emotiv_epoc_gennodejs.dir/clean
+
+# clean rule for target.
+clean: emotiv-ros/CMakeFiles/emotiv_epoc_gennodejs.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target emotiv-ros/CMakeFiles/_emotiv_epoc_generate_messages_check_deps_ChangeFrequency.dir
+
+# All Build rule for target.
+emotiv-ros/CMakeFiles/_emotiv_epoc_generate_messages_check_deps_ChangeFrequency.dir/all:
+	$(MAKE) -f emotiv-ros/CMakeFiles/_emotiv_epoc_generate_messages_check_deps_ChangeFrequency.dir/build.make emotiv-ros/CMakeFiles/_emotiv_epoc_generate_messages_check_deps_ChangeFrequency.dir/depend
+	$(MAKE) -f emotiv-ros/CMakeFiles/_emotiv_epoc_generate_messages_check_deps_ChangeFrequency.dir/build.make emotiv-ros/CMakeFiles/_emotiv_epoc_generate_messages_check_deps_ChangeFrequency.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/Centauri/Software/build/CMakeFiles --progress-num= "Built target _emotiv_epoc_generate_messages_check_deps_ChangeFrequency"
+.PHONY : emotiv-ros/CMakeFiles/_emotiv_epoc_generate_messages_check_deps_ChangeFrequency.dir/all
+
+# Build rule for subdir invocation for target.
+emotiv-ros/CMakeFiles/_emotiv_epoc_generate_messages_check_deps_ChangeFrequency.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 emotiv-ros/CMakeFiles/_emotiv_epoc_generate_messages_check_deps_ChangeFrequency.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/build/CMakeFiles 0
+.PHONY : emotiv-ros/CMakeFiles/_emotiv_epoc_generate_messages_check_deps_ChangeFrequency.dir/rule
+
+# Convenience name for target.
+_emotiv_epoc_generate_messages_check_deps_ChangeFrequency: emotiv-ros/CMakeFiles/_emotiv_epoc_generate_messages_check_deps_ChangeFrequency.dir/rule
+
+.PHONY : _emotiv_epoc_generate_messages_check_deps_ChangeFrequency
+
+# clean rule for target.
+emotiv-ros/CMakeFiles/_emotiv_epoc_generate_messages_check_deps_ChangeFrequency.dir/clean:
+	$(MAKE) -f emotiv-ros/CMakeFiles/_emotiv_epoc_generate_messages_check_deps_ChangeFrequency.dir/build.make emotiv-ros/CMakeFiles/_emotiv_epoc_generate_messages_check_deps_ChangeFrequency.dir/clean
+.PHONY : emotiv-ros/CMakeFiles/_emotiv_epoc_generate_messages_check_deps_ChangeFrequency.dir/clean
+
+# clean rule for target.
+clean: emotiv-ros/CMakeFiles/_emotiv_epoc_generate_messages_check_deps_ChangeFrequency.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_cpp.dir
+
+# All Build rule for target.
+emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_cpp.dir/all: centauri_bridge/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_cpp.dir/all: emotiv-ros/CMakeFiles/_emotiv_epoc_generate_messages_check_deps_ChangeFrequency.dir/all
+emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_cpp.dir/all: emotiv-ros/CMakeFiles/_emotiv_epoc_generate_messages_check_deps_EEGFrame.dir/all
+	$(MAKE) -f emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_cpp.dir/build.make emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_cpp.dir/depend
+	$(MAKE) -f emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_cpp.dir/build.make emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/Centauri/Software/build/CMakeFiles --progress-num=1,2 "Built target emotiv_epoc_generate_messages_cpp"
+.PHONY : emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/build/CMakeFiles 0
+.PHONY : emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+emotiv_epoc_generate_messages_cpp: emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_cpp.dir/rule
+
+.PHONY : emotiv_epoc_generate_messages_cpp
+
+# clean rule for target.
+emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_cpp.dir/clean:
+	$(MAKE) -f emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_cpp.dir/build.make emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_cpp.dir/clean
+.PHONY : emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_cpp.dir/clean
+
+# clean rule for target.
+clean: emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_cpp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_nodejs.dir
+
+# All Build rule for target.
+emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_nodejs.dir/all: centauri_bridge/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_nodejs.dir/all: emotiv-ros/CMakeFiles/_emotiv_epoc_generate_messages_check_deps_ChangeFrequency.dir/all
+emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_nodejs.dir/all: emotiv-ros/CMakeFiles/_emotiv_epoc_generate_messages_check_deps_EEGFrame.dir/all
+	$(MAKE) -f emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_nodejs.dir/build.make emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_nodejs.dir/depend
+	$(MAKE) -f emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_nodejs.dir/build.make emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_nodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/Centauri/Software/build/CMakeFiles --progress-num=8,9 "Built target emotiv_epoc_generate_messages_nodejs"
+.PHONY : emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_nodejs.dir/all
+
+# Build rule for subdir invocation for target.
+emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_nodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_nodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/build/CMakeFiles 0
+.PHONY : emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+emotiv_epoc_generate_messages_nodejs: emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_nodejs.dir/rule
+
+.PHONY : emotiv_epoc_generate_messages_nodejs
+
+# clean rule for target.
+emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_nodejs.dir/build.make emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_nodejs.dir/clean
+.PHONY : emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_nodejs.dir/clean
+
+# clean rule for target.
+clean: emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_nodejs.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages.dir
+
+# All Build rule for target.
+emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages.dir/all: emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_py.dir/all
+emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages.dir/all: emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_cpp.dir/all
+emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages.dir/all: emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_nodejs.dir/all
+emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages.dir/all: emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_lisp.dir/all
+emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages.dir/all: emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_eus.dir/all
+	$(MAKE) -f emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages.dir/build.make emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages.dir/depend
+	$(MAKE) -f emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages.dir/build.make emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/Centauri/Software/build/CMakeFiles --progress-num= "Built target emotiv_epoc_generate_messages"
+.PHONY : emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages.dir/all
+
+# Include target in all.
+all: emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/build/CMakeFiles 13
+	$(MAKE) -f CMakeFiles/Makefile2 emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/build/CMakeFiles 0
+.PHONY : emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages.dir/rule
+
+# Convenience name for target.
+emotiv_epoc_generate_messages: emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages.dir/rule
+
+.PHONY : emotiv_epoc_generate_messages
+
+# clean rule for target.
+emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages.dir/clean:
+	$(MAKE) -f emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages.dir/build.make emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages.dir/clean
+.PHONY : emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages.dir/clean
+
+# clean rule for target.
+clean: emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target emotiv-ros/CMakeFiles/emotiv_epoc_geneus.dir
+
+# All Build rule for target.
+emotiv-ros/CMakeFiles/emotiv_epoc_geneus.dir/all: emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_eus.dir/all
+	$(MAKE) -f emotiv-ros/CMakeFiles/emotiv_epoc_geneus.dir/build.make emotiv-ros/CMakeFiles/emotiv_epoc_geneus.dir/depend
+	$(MAKE) -f emotiv-ros/CMakeFiles/emotiv_epoc_geneus.dir/build.make emotiv-ros/CMakeFiles/emotiv_epoc_geneus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/Centauri/Software/build/CMakeFiles --progress-num= "Built target emotiv_epoc_geneus"
+.PHONY : emotiv-ros/CMakeFiles/emotiv_epoc_geneus.dir/all
+
+# Build rule for subdir invocation for target.
+emotiv-ros/CMakeFiles/emotiv_epoc_geneus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 emotiv-ros/CMakeFiles/emotiv_epoc_geneus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/build/CMakeFiles 0
+.PHONY : emotiv-ros/CMakeFiles/emotiv_epoc_geneus.dir/rule
+
+# Convenience name for target.
+emotiv_epoc_geneus: emotiv-ros/CMakeFiles/emotiv_epoc_geneus.dir/rule
+
+.PHONY : emotiv_epoc_geneus
+
+# clean rule for target.
+emotiv-ros/CMakeFiles/emotiv_epoc_geneus.dir/clean:
+	$(MAKE) -f emotiv-ros/CMakeFiles/emotiv_epoc_geneus.dir/build.make emotiv-ros/CMakeFiles/emotiv_epoc_geneus.dir/clean
+.PHONY : emotiv-ros/CMakeFiles/emotiv_epoc_geneus.dir/clean
+
+# clean rule for target.
+clean: emotiv-ros/CMakeFiles/emotiv_epoc_geneus.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target emotiv-ros/CMakeFiles/_emotiv_epoc_generate_messages_check_deps_EEGFrame.dir
+
+# All Build rule for target.
+emotiv-ros/CMakeFiles/_emotiv_epoc_generate_messages_check_deps_EEGFrame.dir/all:
+	$(MAKE) -f emotiv-ros/CMakeFiles/_emotiv_epoc_generate_messages_check_deps_EEGFrame.dir/build.make emotiv-ros/CMakeFiles/_emotiv_epoc_generate_messages_check_deps_EEGFrame.dir/depend
+	$(MAKE) -f emotiv-ros/CMakeFiles/_emotiv_epoc_generate_messages_check_deps_EEGFrame.dir/build.make emotiv-ros/CMakeFiles/_emotiv_epoc_generate_messages_check_deps_EEGFrame.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/Centauri/Software/build/CMakeFiles --progress-num= "Built target _emotiv_epoc_generate_messages_check_deps_EEGFrame"
+.PHONY : emotiv-ros/CMakeFiles/_emotiv_epoc_generate_messages_check_deps_EEGFrame.dir/all
+
+# Build rule for subdir invocation for target.
+emotiv-ros/CMakeFiles/_emotiv_epoc_generate_messages_check_deps_EEGFrame.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 emotiv-ros/CMakeFiles/_emotiv_epoc_generate_messages_check_deps_EEGFrame.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/build/CMakeFiles 0
+.PHONY : emotiv-ros/CMakeFiles/_emotiv_epoc_generate_messages_check_deps_EEGFrame.dir/rule
+
+# Convenience name for target.
+_emotiv_epoc_generate_messages_check_deps_EEGFrame: emotiv-ros/CMakeFiles/_emotiv_epoc_generate_messages_check_deps_EEGFrame.dir/rule
+
+.PHONY : _emotiv_epoc_generate_messages_check_deps_EEGFrame
+
+# clean rule for target.
+emotiv-ros/CMakeFiles/_emotiv_epoc_generate_messages_check_deps_EEGFrame.dir/clean:
+	$(MAKE) -f emotiv-ros/CMakeFiles/_emotiv_epoc_generate_messages_check_deps_EEGFrame.dir/build.make emotiv-ros/CMakeFiles/_emotiv_epoc_generate_messages_check_deps_EEGFrame.dir/clean
+.PHONY : emotiv-ros/CMakeFiles/_emotiv_epoc_generate_messages_check_deps_EEGFrame.dir/clean
+
+# clean rule for target.
+clean: emotiv-ros/CMakeFiles/_emotiv_epoc_generate_messages_check_deps_EEGFrame.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_lisp.dir
+
+# All Build rule for target.
+emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_lisp.dir/all: centauri_bridge/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_lisp.dir/all: emotiv-ros/CMakeFiles/_emotiv_epoc_generate_messages_check_deps_ChangeFrequency.dir/all
+emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_lisp.dir/all: emotiv-ros/CMakeFiles/_emotiv_epoc_generate_messages_check_deps_EEGFrame.dir/all
+	$(MAKE) -f emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_lisp.dir/build.make emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_lisp.dir/depend
+	$(MAKE) -f emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_lisp.dir/build.make emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_lisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/Centauri/Software/build/CMakeFiles --progress-num=6,7 "Built target emotiv_epoc_generate_messages_lisp"
+.PHONY : emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/build/CMakeFiles 0
+.PHONY : emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+emotiv_epoc_generate_messages_lisp: emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_lisp.dir/rule
+
+.PHONY : emotiv_epoc_generate_messages_lisp
+
+# clean rule for target.
+emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_lisp.dir/clean:
+	$(MAKE) -f emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_lisp.dir/build.make emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_lisp.dir/clean
+.PHONY : emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_lisp.dir/clean
+
+# clean rule for target.
+clean: emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_lisp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target emotiv-ros/CMakeFiles/emotiv_epoc_gencpp.dir
+
+# All Build rule for target.
+emotiv-ros/CMakeFiles/emotiv_epoc_gencpp.dir/all: emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_cpp.dir/all
+	$(MAKE) -f emotiv-ros/CMakeFiles/emotiv_epoc_gencpp.dir/build.make emotiv-ros/CMakeFiles/emotiv_epoc_gencpp.dir/depend
+	$(MAKE) -f emotiv-ros/CMakeFiles/emotiv_epoc_gencpp.dir/build.make emotiv-ros/CMakeFiles/emotiv_epoc_gencpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/Centauri/Software/build/CMakeFiles --progress-num= "Built target emotiv_epoc_gencpp"
+.PHONY : emotiv-ros/CMakeFiles/emotiv_epoc_gencpp.dir/all
+
+# Build rule for subdir invocation for target.
+emotiv-ros/CMakeFiles/emotiv_epoc_gencpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 emotiv-ros/CMakeFiles/emotiv_epoc_gencpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/build/CMakeFiles 0
+.PHONY : emotiv-ros/CMakeFiles/emotiv_epoc_gencpp.dir/rule
+
+# Convenience name for target.
+emotiv_epoc_gencpp: emotiv-ros/CMakeFiles/emotiv_epoc_gencpp.dir/rule
+
+.PHONY : emotiv_epoc_gencpp
+
+# clean rule for target.
+emotiv-ros/CMakeFiles/emotiv_epoc_gencpp.dir/clean:
+	$(MAKE) -f emotiv-ros/CMakeFiles/emotiv_epoc_gencpp.dir/build.make emotiv-ros/CMakeFiles/emotiv_epoc_gencpp.dir/clean
+.PHONY : emotiv-ros/CMakeFiles/emotiv_epoc_gencpp.dir/clean
+
+# clean rule for target.
+clean: emotiv-ros/CMakeFiles/emotiv_epoc_gencpp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_eus.dir
+
+# All Build rule for target.
+emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_eus.dir/all: centauri_bridge/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_eus.dir/all: emotiv-ros/CMakeFiles/_emotiv_epoc_generate_messages_check_deps_ChangeFrequency.dir/all
+emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_eus.dir/all: emotiv-ros/CMakeFiles/_emotiv_epoc_generate_messages_check_deps_EEGFrame.dir/all
+	$(MAKE) -f emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_eus.dir/build.make emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_eus.dir/depend
+	$(MAKE) -f emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_eus.dir/build.make emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_eus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/Centauri/Software/build/CMakeFiles --progress-num=3,4,5 "Built target emotiv_epoc_generate_messages_eus"
+.PHONY : emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_eus.dir/all
+
+# Build rule for subdir invocation for target.
+emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_eus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_eus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/build/CMakeFiles 0
+.PHONY : emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+emotiv_epoc_generate_messages_eus: emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_eus.dir/rule
+
+.PHONY : emotiv_epoc_generate_messages_eus
+
+# clean rule for target.
+emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_eus.dir/clean:
+	$(MAKE) -f emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_eus.dir/build.make emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_eus.dir/clean
+.PHONY : emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_eus.dir/clean
+
+# clean rule for target.
+clean: emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_eus.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target emotiv-ros/CMakeFiles/emotiv_epoc_genlisp.dir
+
+# All Build rule for target.
+emotiv-ros/CMakeFiles/emotiv_epoc_genlisp.dir/all: emotiv-ros/CMakeFiles/emotiv_epoc_generate_messages_lisp.dir/all
+	$(MAKE) -f emotiv-ros/CMakeFiles/emotiv_epoc_genlisp.dir/build.make emotiv-ros/CMakeFiles/emotiv_epoc_genlisp.dir/depend
+	$(MAKE) -f emotiv-ros/CMakeFiles/emotiv_epoc_genlisp.dir/build.make emotiv-ros/CMakeFiles/emotiv_epoc_genlisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robot/Centauri/Software/build/CMakeFiles --progress-num= "Built target emotiv_epoc_genlisp"
+.PHONY : emotiv-ros/CMakeFiles/emotiv_epoc_genlisp.dir/all
+
+# Build rule for subdir invocation for target.
+emotiv-ros/CMakeFiles/emotiv_epoc_genlisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 emotiv-ros/CMakeFiles/emotiv_epoc_genlisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Centauri/Software/build/CMakeFiles 0
+.PHONY : emotiv-ros/CMakeFiles/emotiv_epoc_genlisp.dir/rule
+
+# Convenience name for target.
+emotiv_epoc_genlisp: emotiv-ros/CMakeFiles/emotiv_epoc_genlisp.dir/rule
+
+.PHONY : emotiv_epoc_genlisp
+
+# clean rule for target.
+emotiv-ros/CMakeFiles/emotiv_epoc_genlisp.dir/clean:
+	$(MAKE) -f emotiv-ros/CMakeFiles/emotiv_epoc_genlisp.dir/build.make emotiv-ros/CMakeFiles/emotiv_epoc_genlisp.dir/clean
+.PHONY : emotiv-ros/CMakeFiles/emotiv_epoc_genlisp.dir/clean
+
+# clean rule for target.
+clean: emotiv-ros/CMakeFiles/emotiv_epoc_genlisp.dir/clean
+
+.PHONY : clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

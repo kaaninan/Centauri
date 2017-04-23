@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/robot/Centauri/Software/ROS/src
+CMAKE_SOURCE_DIR = /home/robot/Centauri/Software/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/robot/Centauri/Software/ROS/build
+CMAKE_BINARY_DIR = /home/robot/Centauri/Software/build
 
 # Utility rule file for _catkin_empty_exported_target.
 
@@ -63,10 +63,10 @@ centauri/CMakeFiles/_catkin_empty_exported_target.dir/build: _catkin_empty_expor
 .PHONY : centauri/CMakeFiles/_catkin_empty_exported_target.dir/build
 
 centauri/CMakeFiles/_catkin_empty_exported_target.dir/clean:
-	cd /home/robot/Centauri/Software/ROS/build/centauri && $(CMAKE_COMMAND) -P CMakeFiles/_catkin_empty_exported_target.dir/cmake_clean.cmake
+	cd /home/robot/Centauri/Software/build/centauri && $(CMAKE_COMMAND) -P CMakeFiles/_catkin_empty_exported_target.dir/cmake_clean.cmake
 .PHONY : centauri/CMakeFiles/_catkin_empty_exported_target.dir/clean
 
 centauri/CMakeFiles/_catkin_empty_exported_target.dir/depend:
-	cd /home/robot/Centauri/Software/ROS/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robot/Centauri/Software/ROS/src /home/robot/Centauri/Software/ROS/src/centauri /home/robot/Centauri/Software/ROS/build /home/robot/Centauri/Software/ROS/build/centauri /home/robot/Centauri/Software/ROS/build/centauri/CMakeFiles/_catkin_empty_exported_target.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/robot/Centauri/Software/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robot/Centauri/Software/src /home/robot/Centauri/Software/src/centauri /home/robot/Centauri/Software/build /home/robot/Centauri/Software/build/centauri /home/robot/Centauri/Software/build/centauri/CMakeFiles/_catkin_empty_exported_target.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : centauri/CMakeFiles/_catkin_empty_exported_target.dir/depend
 

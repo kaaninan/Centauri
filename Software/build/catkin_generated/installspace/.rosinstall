@@ -1,2 +1,2 @@
 - setup-file:
-    local-name: /home/robot/Centauri/Software/ROS/install/setup.sh
+    local-name: /home/robot/Centauri/Software/install/setup.sh

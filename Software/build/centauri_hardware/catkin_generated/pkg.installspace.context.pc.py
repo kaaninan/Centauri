@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "centauri_hardware"
-PROJECT_SPACE_DIR = "/home/robot/Centauri/Software/ROS/install"
-PROJECT_VERSION = "0.0.0"
+PROJECT_SPACE_DIR = "/home/robot/Centauri/Software/install"
+PROJECT_VERSION = "0.1.0"

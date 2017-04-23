@@ -1,8 +1,8 @@
-prefix=/home/robot/Centauri/Software/ROS/install
+prefix=/home/robot/Centauri/Software/install
 
 Name: centauri_motion
 Description: Description of centauri_motion
 Version: 0.0.0
 Cflags: 
-Libs: -L/home/robot/Centauri/Software/ROS/install/lib 
+Libs: -L/home/robot/Centauri/Software/install/lib 
 Requires: 

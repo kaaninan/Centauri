@@ -1,0 +1,8 @@
+prefix=/home/robot/Centauri/Software/devel
+
+Name: emotiv_epoc
+Description: Description of emotiv_epoc
+Version: 0.1.0
+Cflags: -I/home/robot/Centauri/Software/devel/include
+Libs: -L/home/robot/Centauri/Software/devel/lib 
+Requires: message_runtime

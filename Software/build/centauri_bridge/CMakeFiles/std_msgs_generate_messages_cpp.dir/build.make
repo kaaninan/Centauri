@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/robot/Centauri/Software/ROS/src
+CMAKE_SOURCE_DIR = /home/robot/Centauri/Software/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/robot/Centauri/Software/ROS/build
+CMAKE_BINARY_DIR = /home/robot/Centauri/Software/build
 
 # Utility rule file for std_msgs_generate_messages_cpp.
 
@@ -63,10 +63,10 @@ centauri_bridge/CMakeFiles/std_msgs_generate_messages_cpp.dir/build: std_msgs_ge
 .PHONY : centauri_bridge/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
 
 centauri_bridge/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean:
-	cd /home/robot/Centauri/Software/ROS/build/centauri_bridge && $(CMAKE_COMMAND) -P CMakeFiles/std_msgs_generate_messages_cpp.dir/cmake_clean.cmake
+	cd /home/robot/Centauri/Software/build/centauri_bridge && $(CMAKE_COMMAND) -P CMakeFiles/std_msgs_generate_messages_cpp.dir/cmake_clean.cmake
 .PHONY : centauri_bridge/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
 
 centauri_bridge/CMakeFiles/std_msgs_generate_messages_cpp.dir/depend:
-	cd /home/robot/Centauri/Software/ROS/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robot/Centauri/Software/ROS/src /home/robot/Centauri/Software/ROS/src/centauri_bridge /home/robot/Centauri/Software/ROS/build /home/robot/Centauri/Software/ROS/build/centauri_bridge /home/robot/Centauri/Software/ROS/build/centauri_bridge/CMakeFiles/std_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/robot/Centauri/Software/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robot/Centauri/Software/src /home/robot/Centauri/Software/src/centauri_bridge /home/robot/Centauri/Software/build /home/robot/Centauri/Software/build/centauri_bridge /home/robot/Centauri/Software/build/centauri_bridge/CMakeFiles/std_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : centauri_bridge/CMakeFiles/std_msgs_generate_messages_cpp.dir/depend
 
