@@ -49,10 +49,10 @@ struct EEGFrame_
    typedef  ::std_msgs::Header_<ContainerAllocator>  _header_type;
   _header_type header;
 
-   typedef uint32_t _accel_x_type;
+   typedef int32_t _accel_x_type;
   _accel_x_type accel_x;
 
-   typedef uint32_t _accel_y_type;
+   typedef int32_t _accel_y_type;
   _accel_y_type accel_y;
 
    typedef uint32_t _channel_count_type;
@@ -61,10 +61,10 @@ struct EEGFrame_
    typedef std::vector<std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other > , typename ContainerAllocator::template rebind<std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other > >::other >  _channel_names_type;
   _channel_names_type channel_names;
 
-   typedef std::vector<uint32_t, typename ContainerAllocator::template rebind<uint32_t>::other >  _signals_type;
+   typedef std::vector<int32_t, typename ContainerAllocator::template rebind<int32_t>::other >  _signals_type;
   _signals_type signals;
 
-   typedef std::vector<uint32_t, typename ContainerAllocator::template rebind<uint32_t>::other >  _qualities_type;
+   typedef std::vector<int32_t, typename ContainerAllocator::template rebind<int32_t>::other >  _qualities_type;
   _qualities_type qualities;
 
 
@@ -144,12 +144,12 @@ struct MD5Sum< ::emotiv_epoc::EEGFrame_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "86134851c3839c35d0c7eb7049a290b2";
+    return "92a93661fa971fb7494f0877c88d2361";
   }
 
   static const char* value(const ::emotiv_epoc::EEGFrame_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0x86134851c3839c35ULL;
-  static const uint64_t static_value2 = 0xd0c7eb7049a290b2ULL;
+  static const uint64_t static_value1 = 0x92a93661fa971fb7ULL;
+  static const uint64_t static_value2 = 0x494f0877c88d2361ULL;
 };
 
 template<class ContainerAllocator>
@@ -169,13 +169,13 @@ struct Definition< ::emotiv_epoc::EEGFrame_<ContainerAllocator> >
   static const char* value()
   {
     return "Header header\n\
-uint32 accel_x\n\
-uint32 accel_y\n\
+int32 accel_x\n\
+int32 accel_y\n\
 \n\
 uint32 channel_count\n\
 string[] channel_names\n\
-uint32[] signals\n\
-uint32[] qualities\n\
+int32[] signals\n\
+int32[] qualities\n\
 \n\
 ================================================================================\n\
 MSG: std_msgs/Header\n\
@@ -241,9 +241,9 @@ struct Printer< ::emotiv_epoc::EEGFrame_<ContainerAllocator> >
     s << std::endl;
     Printer< ::std_msgs::Header_<ContainerAllocator> >::stream(s, indent + "  ", v.header);
     s << indent << "accel_x: ";
-    Printer<uint32_t>::stream(s, indent + "  ", v.accel_x);
+    Printer<int32_t>::stream(s, indent + "  ", v.accel_x);
     s << indent << "accel_y: ";
-    Printer<uint32_t>::stream(s, indent + "  ", v.accel_y);
+    Printer<int32_t>::stream(s, indent + "  ", v.accel_y);
     s << indent << "channel_count: ";
     Printer<uint32_t>::stream(s, indent + "  ", v.channel_count);
     s << indent << "channel_names[]" << std::endl;
@@ -256,13 +256,13 @@ struct Printer< ::emotiv_epoc::EEGFrame_<ContainerAllocator> >
     for (size_t i = 0; i < v.signals.size(); ++i)
     {
       s << indent << "  signals[" << i << "]: ";
-      Printer<uint32_t>::stream(s, indent + "  ", v.signals[i]);
+      Printer<int32_t>::stream(s, indent + "  ", v.signals[i]);
     }
     s << indent << "qualities[]" << std::endl;
     for (size_t i = 0; i < v.qualities.size(); ++i)
     {
       s << indent << "  qualities[" << i << "]: ";
-      Printer<uint32_t>::stream(s, indent + "  ", v.qualities[i]);
+      Printer<int32_t>::stream(s, indent + "  ", v.qualities[i]);
     }
   }
 };

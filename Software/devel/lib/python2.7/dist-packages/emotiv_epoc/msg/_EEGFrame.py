@@ -8,17 +8,17 @@ import struct
 import std_msgs.msg
 
 class EEGFrame(genpy.Message):
-  _md5sum = "86134851c3839c35d0c7eb7049a290b2"
+  _md5sum = "92a93661fa971fb7494f0877c88d2361"
   _type = "emotiv_epoc/EEGFrame"
   _has_header = True #flag to mark the presence of a Header object
   _full_text = """Header header
-uint32 accel_x
-uint32 accel_y
+int32 accel_x
+int32 accel_y
 
 uint32 channel_count
 string[] channel_names
-uint32[] signals
-uint32[] qualities
+int32[] signals
+int32[] qualities
 
 ================================================================================
 MSG: std_msgs/Header
@@ -39,7 +39,7 @@ time stamp
 string frame_id
 """
   __slots__ = ['header','accel_x','accel_y','channel_count','channel_names','signals','qualities']
-  _slot_types = ['std_msgs/Header','uint32','uint32','uint32','string[]','uint32[]','uint32[]']
+  _slot_types = ['std_msgs/Header','int32','int32','uint32','string[]','int32[]','int32[]']
 
   def __init__(self, *args, **kwds):
     """
@@ -102,7 +102,7 @@ string frame_id
         length = len(_x)
       buff.write(struct.pack('<I%ss'%length, length, _x))
       _x = self
-      buff.write(_get_struct_3I().pack(_x.accel_x, _x.accel_y, _x.channel_count))
+      buff.write(_get_struct_2iI().pack(_x.accel_x, _x.accel_y, _x.channel_count))
       length = len(self.channel_names)
       buff.write(_struct_I.pack(length))
       for val1 in self.channel_names:
@@ -113,11 +113,11 @@ string frame_id
         buff.write(struct.pack('<I%ss'%length, length, val1))
       length = len(self.signals)
       buff.write(_struct_I.pack(length))
-      pattern = '<%sI'%length
+      pattern = '<%si'%length
       buff.write(struct.pack(pattern, *self.signals))
       length = len(self.qualities)
       buff.write(_struct_I.pack(length))
-      pattern = '<%sI'%length
+      pattern = '<%si'%length
       buff.write(struct.pack(pattern, *self.qualities))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
@@ -147,7 +147,7 @@ string frame_id
       _x = self
       start = end
       end += 12
-      (_x.accel_x, _x.accel_y, _x.channel_count,) = _get_struct_3I().unpack(str[start:end])
+      (_x.accel_x, _x.accel_y, _x.channel_count,) = _get_struct_2iI().unpack(str[start:end])
       start = end
       end += 4
       (length,) = _struct_I.unpack(str[start:end])
@@ -166,14 +166,14 @@ string frame_id
       start = end
       end += 4
       (length,) = _struct_I.unpack(str[start:end])
-      pattern = '<%sI'%length
+      pattern = '<%si'%length
       start = end
       end += struct.calcsize(pattern)
       self.signals = struct.unpack(pattern, str[start:end])
       start = end
       end += 4
       (length,) = _struct_I.unpack(str[start:end])
-      pattern = '<%sI'%length
+      pattern = '<%si'%length
       start = end
       end += struct.calcsize(pattern)
       self.qualities = struct.unpack(pattern, str[start:end])
@@ -198,7 +198,7 @@ string frame_id
         length = len(_x)
       buff.write(struct.pack('<I%ss'%length, length, _x))
       _x = self
-      buff.write(_get_struct_3I().pack(_x.accel_x, _x.accel_y, _x.channel_count))
+      buff.write(_get_struct_2iI().pack(_x.accel_x, _x.accel_y, _x.channel_count))
       length = len(self.channel_names)
       buff.write(_struct_I.pack(length))
       for val1 in self.channel_names:
@@ -209,11 +209,11 @@ string frame_id
         buff.write(struct.pack('<I%ss'%length, length, val1))
       length = len(self.signals)
       buff.write(_struct_I.pack(length))
-      pattern = '<%sI'%length
+      pattern = '<%si'%length
       buff.write(self.signals.tostring())
       length = len(self.qualities)
       buff.write(_struct_I.pack(length))
-      pattern = '<%sI'%length
+      pattern = '<%si'%length
       buff.write(self.qualities.tostring())
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
@@ -244,7 +244,7 @@ string frame_id
       _x = self
       start = end
       end += 12
-      (_x.accel_x, _x.accel_y, _x.channel_count,) = _get_struct_3I().unpack(str[start:end])
+      (_x.accel_x, _x.accel_y, _x.channel_count,) = _get_struct_2iI().unpack(str[start:end])
       start = end
       end += 4
       (length,) = _struct_I.unpack(str[start:end])
@@ -263,17 +263,17 @@ string frame_id
       start = end
       end += 4
       (length,) = _struct_I.unpack(str[start:end])
-      pattern = '<%sI'%length
+      pattern = '<%si'%length
       start = end
       end += struct.calcsize(pattern)
-      self.signals = numpy.frombuffer(str[start:end], dtype=numpy.uint32, count=length)
+      self.signals = numpy.frombuffer(str[start:end], dtype=numpy.int32, count=length)
       start = end
       end += 4
       (length,) = _struct_I.unpack(str[start:end])
-      pattern = '<%sI'%length
+      pattern = '<%si'%length
       start = end
       end += struct.calcsize(pattern)
-      self.qualities = numpy.frombuffer(str[start:end], dtype=numpy.uint32, count=length)
+      self.qualities = numpy.frombuffer(str[start:end], dtype=numpy.int32, count=length)
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e) #most likely buffer underfill
@@ -288,3 +288,9 @@ def _get_struct_3I():
     if _struct_3I is None:
         _struct_3I = struct.Struct("<3I")
     return _struct_3I
+_struct_2iI = None
+def _get_struct_2iI():
+    global _struct_2iI
+    if _struct_2iI is None:
+        _struct_2iI = struct.Struct("<2iI")
+    return _struct_2iI

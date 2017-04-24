@@ -78,17 +78,17 @@ class EEGFrame {
     // Serialize message field [header]
     bufferOffset = std_msgs.msg.Header.serialize(obj.header, buffer, bufferOffset);
     // Serialize message field [accel_x]
-    bufferOffset = _serializer.uint32(obj.accel_x, buffer, bufferOffset);
+    bufferOffset = _serializer.int32(obj.accel_x, buffer, bufferOffset);
     // Serialize message field [accel_y]
-    bufferOffset = _serializer.uint32(obj.accel_y, buffer, bufferOffset);
+    bufferOffset = _serializer.int32(obj.accel_y, buffer, bufferOffset);
     // Serialize message field [channel_count]
     bufferOffset = _serializer.uint32(obj.channel_count, buffer, bufferOffset);
     // Serialize message field [channel_names]
     bufferOffset = _arraySerializer.string(obj.channel_names, buffer, bufferOffset, null);
     // Serialize message field [signals]
-    bufferOffset = _arraySerializer.uint32(obj.signals, buffer, bufferOffset, null);
+    bufferOffset = _arraySerializer.int32(obj.signals, buffer, bufferOffset, null);
     // Serialize message field [qualities]
-    bufferOffset = _arraySerializer.uint32(obj.qualities, buffer, bufferOffset, null);
+    bufferOffset = _arraySerializer.int32(obj.qualities, buffer, bufferOffset, null);
     return bufferOffset;
   }
 
@@ -99,17 +99,17 @@ class EEGFrame {
     // Deserialize message field [header]
     data.header = std_msgs.msg.Header.deserialize(buffer, bufferOffset);
     // Deserialize message field [accel_x]
-    data.accel_x = _deserializer.uint32(buffer, bufferOffset);
+    data.accel_x = _deserializer.int32(buffer, bufferOffset);
     // Deserialize message field [accel_y]
-    data.accel_y = _deserializer.uint32(buffer, bufferOffset);
+    data.accel_y = _deserializer.int32(buffer, bufferOffset);
     // Deserialize message field [channel_count]
     data.channel_count = _deserializer.uint32(buffer, bufferOffset);
     // Deserialize message field [channel_names]
     data.channel_names = _arrayDeserializer.string(buffer, bufferOffset, null)
     // Deserialize message field [signals]
-    data.signals = _arrayDeserializer.uint32(buffer, bufferOffset, null)
+    data.signals = _arrayDeserializer.int32(buffer, bufferOffset, null)
     // Deserialize message field [qualities]
-    data.qualities = _arrayDeserializer.uint32(buffer, bufferOffset, null)
+    data.qualities = _arrayDeserializer.int32(buffer, bufferOffset, null)
     return data;
   }
 
@@ -131,20 +131,20 @@ class EEGFrame {
 
   static md5sum() {
     //Returns md5sum for a message object
-    return '86134851c3839c35d0c7eb7049a290b2';
+    return '92a93661fa971fb7494f0877c88d2361';
   }
 
   static messageDefinition() {
     // Returns full string definition for message
     return `
     Header header
-    uint32 accel_x
-    uint32 accel_y
+    int32 accel_x
+    int32 accel_y
     
     uint32 channel_count
     string[] channel_names
-    uint32[] signals
-    uint32[] qualities
+    int32[] signals
+    int32[] qualities
     
     ================================================================================
     MSG: std_msgs/Header

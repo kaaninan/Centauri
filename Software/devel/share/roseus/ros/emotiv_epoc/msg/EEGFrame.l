@@ -68,17 +68,17 @@
    (+
     ;; std_msgs/Header _header
     (send _header :serialization-length)
-    ;; uint32 _accel_x
+    ;; int32 _accel_x
     4
-    ;; uint32 _accel_y
+    ;; int32 _accel_y
     4
     ;; uint32 _channel_count
     4
     ;; string[] _channel_names
     (apply #'+ (mapcar #'(lambda (x) (+ 4 (length x))) _channel_names)) 4
-    ;; uint32[] _signals
+    ;; int32[] _signals
     (* 4    (length _signals)) 4
-    ;; uint32[] _qualities
+    ;; int32[] _qualities
     (* 4    (length _qualities)) 4
     ))
   (:serialize
@@ -87,9 +87,9 @@
               (make-string-output-stream (send self :serialization-length)))))
      ;; std_msgs/Header _header
        (send _header :serialize s)
-     ;; uint32 _accel_x
+     ;; int32 _accel_x
        (write-long _accel_x s)
-     ;; uint32 _accel_y
+     ;; int32 _accel_y
        (write-long _accel_y s)
      ;; uint32 _channel_count
        (write-long _channel_count s)
@@ -98,12 +98,12 @@
      (dolist (elem _channel_names)
        (write-long (length elem) s) (princ elem s)
        )
-     ;; uint32[] _signals
+     ;; int32[] _signals
      (write-long (length _signals) s)
      (dotimes (i (length _signals))
        (write-long (elt _signals i) s)
        )
-     ;; uint32[] _qualities
+     ;; int32[] _qualities
      (write-long (length _qualities) s)
      (dotimes (i (length _qualities))
        (write-long (elt _qualities i) s)
@@ -114,9 +114,9 @@
    (buf &optional (ptr- 0))
    ;; std_msgs/Header _header
      (send _header :deserialize buf ptr-) (incf ptr- (send _header :serialization-length))
-   ;; uint32 _accel_x
+   ;; int32 _accel_x
      (setq _accel_x (sys::peek buf ptr- :integer)) (incf ptr- 4)
-   ;; uint32 _accel_y
+   ;; int32 _accel_y
      (setq _accel_y (sys::peek buf ptr- :integer)) (incf ptr- 4)
    ;; uint32 _channel_count
      (setq _channel_count (sys::peek buf ptr- :integer)) (incf ptr- 4)
@@ -127,14 +127,14 @@
      (dotimes (i n)
      (let (n) (setq n (sys::peek buf ptr- :integer)) (incf ptr- 4) (setf (elt _channel_names i) (subseq buf ptr- (+ ptr- n))) (incf ptr- n))
      ))
-   ;; uint32[] _signals
+   ;; int32[] _signals
    (let (n)
      (setq n (sys::peek buf ptr- :integer)) (incf ptr- 4)
      (setq _signals (instantiate integer-vector n))
      (dotimes (i n)
      (setf (elt _signals i) (sys::peek buf ptr- :integer)) (incf ptr- 4)
      ))
-   ;; uint32[] _qualities
+   ;; int32[] _qualities
    (let (n)
      (setq n (sys::peek buf ptr- :integer)) (incf ptr- 4)
      (setq _qualities (instantiate integer-vector n))
@@ -145,17 +145,17 @@
    self)
   )
 
-(setf (get emotiv_epoc::EEGFrame :md5sum-) "86134851c3839c35d0c7eb7049a290b2")
+(setf (get emotiv_epoc::EEGFrame :md5sum-) "92a93661fa971fb7494f0877c88d2361")
 (setf (get emotiv_epoc::EEGFrame :datatype-) "emotiv_epoc/EEGFrame")
 (setf (get emotiv_epoc::EEGFrame :definition-)
       "Header header
-uint32 accel_x
-uint32 accel_y
+int32 accel_x
+int32 accel_y
 
 uint32 channel_count
 string[] channel_names
-uint32[] signals
-uint32[] qualities
+int32[] signals
+int32[] qualities
 
 ================================================================================
 MSG: std_msgs/Header
@@ -179,6 +179,6 @@ string frame_id
 
 
 
-(provide :emotiv_epoc/EEGFrame "86134851c3839c35d0c7eb7049a290b2")
+(provide :emotiv_epoc/EEGFrame "92a93661fa971fb7494f0877c88d2361")
 
 
