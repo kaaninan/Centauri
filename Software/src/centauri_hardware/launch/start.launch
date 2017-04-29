@@ -1,0 +1,8 @@
+<launch>
+	
+	<node pkg="centauri_hardware" type="serial_connection.py" name="serial_connection" output="screen">
+		<param name="port" value="/dev/ttyS1"/>
+		<param name="baudrate" value="19200"/>
+	</node>
+	
+</launch>

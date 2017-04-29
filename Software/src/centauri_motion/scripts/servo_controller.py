@@ -8,6 +8,9 @@ from std_msgs.msg import *
 present_pos_servos = [0,0,0,0,0,0,0,0]
 
 
+
+##  LIMIT  ##
+
 # Position limits
 def limit_pos(positions):
 	limits = rospy.get_param('~Limit')
@@ -16,6 +19,9 @@ def limit_pos(positions):
 		end = limits[key][1]
 		if pos >= first and pos <= end:
 			pass
+		elif int(pos) == -1:
+			# Eger pozisyon -1 ise eksi konumunu koru
+			pos = present_pos_servos[key]
 		else:
 			new = -1
 			t1 = abs(first-pos)
@@ -27,6 +33,36 @@ def limit_pos(positions):
 			positions[key] = new
 			rospy.logwarn("Motion Manager: Warning servo limit! ID: "+str(key+1)+" old pos: "+str(pos)+ " new pos: "+ str(new))
 	return positions
+	
+
+# Position limits (only head)
+def limit_pos_only_head(positions):
+	# [x, y]
+	limits = rospy.get_param('~Limit')
+	for key, pos in enumerate(positions):
+		first = limits[key+6][0]
+		end = limits[key+6][1]
+		if pos >= first and pos <= end:
+			pass
+		elif int(pos) == -1:
+			# Eger pozisyon -1 ise eksi konumunu koru
+			pos = present_pos_servos[key+6]
+		else:
+			new = -1
+			t1 = abs(first-pos)
+			t2 = abs(end-pos)
+			if t1 > t2:
+				new = end
+			else:
+				new = first
+			positions[key] = new
+			rospy.logwarn("Motion Manager (Head): Warning servo limit! ID: "+str(key+1)+" old pos: "+str(pos)+ " new pos: "+ str(new))
+	return positions
+
+
+
+
+##  SEND POS TO HARDWARE  ##
 
 
 # Directly go postions
@@ -43,7 +79,8 @@ def go_pos(positions, speed):
 		present_pos_servos[key] = pos
 
 
-## For the servo rotations to end at the same time
+
+# For the servo rotations to end at the same time
 def speed_calculate(pre_pos, goal_pos, max_speed):
 	steps = []
 	
@@ -76,6 +113,23 @@ def speed_calculate(pre_pos, goal_pos, max_speed):
 		rate.sleep()
 
 
+# Only head move
+def head_move(positions, speed):
+	positions = limit_pos_only_head(positions) # Control limits
+	for key, pos in enumerate(positions):
+		data = Int64MultiArray()
+		data.data = []
+		data.data.append(int(key+6)) # ID
+		data.data.append(int(pos)) # POS
+		data.data.append(speed) # SPEED
+		pub_servo.publish(data)
+		rate.sleep()
+		present_pos_servos[key+6] = pos
+
+
+
+def callback_command(data):
+	print data
 
 
 
@@ -86,6 +140,8 @@ def main():
 	rospy.init_node('motion_servo', anonymous=True)
 
 	pub_servo = rospy.Publisher('/serial_send_servo', Int64MultiArray, queue_size=10)
+	
+	rospy.Subscriber('/command_servo', Int64MultiArray, callback_command)
 	
 	rate = rospy.Rate(50)
 	

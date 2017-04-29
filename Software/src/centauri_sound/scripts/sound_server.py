@@ -33,6 +33,9 @@ def init():
 	global allow_yak
 	allow_yak = rospy.Time.now()
 	rospy.Subscriber('sound_cmd', SoundCommand, sound_translator)
+	# Volume Up
+	volume = rospy.get_param('~volume')
+	os.system("pacmd set-sink-volume 0 "+ str(volume))
 	rospy.spin()
 
 

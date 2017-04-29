@@ -11,6 +11,7 @@ from std_msgs.msg import *
 
 docname = os.path.basename(__file__)
 
+stop_cmd = 0 # Acil durumda serialden gondermeyi keser
 
 # Serial
 
@@ -44,7 +45,7 @@ def parse_data(data):
 		pub_dis_back.publish(data_back)
 		
 		data_front = Int64()
-		data_front.data = int(dis[0])
+		data_front.data = int(dis[1])
 		pub_dis_front.publish(data_front)
 				
 	elif(arr[0] == "2"):
@@ -62,10 +63,13 @@ def query_battery():
 		time.sleep(1)
 		
 def query_distance():
-	board.write("1&")
+	while not rospy.is_shutdown():
+		board.write("1&")
+		time.sleep(0.2)
 	
 	
 def send_dc(data):
+	global stop_cmd
 	sag_yon = data.data[0]
 	sag_hiz = data.data[1]
 	sol_yon = data.data[2]
@@ -83,12 +87,13 @@ def send_dc(data):
 		write = 4
 	
 	# Send Board
-	board.write("3 "+str(write)+"&")
-	time.sleep(0.01)
-	board.write("4 "+str(sol_hiz)+"&")
-	time.sleep(0.01)
-	board.write("5 "+str(sag_hiz)+"&")
-	time.sleep(0.01)
+	if stop_cmd == 0:
+		board.write("3 "+str(write)+"&")
+		time.sleep(0.01)
+		board.write("4 "+str(sol_hiz)+"&")
+		time.sleep(0.01)
+		board.write("5 "+str(sag_hiz)+"&")
+		time.sleep(0.01)
 
 
 def send_servo(data):
@@ -105,6 +110,18 @@ def send_servo(data):
 	time.sleep(0.01)
 
 
+def call_stop(data):
+	global stop_cmd
+	stop_cmd = data.data
+	if stop_cmd == 1:
+		rospy.logwarn("Hardware Warning! Don't send command to board. Stop Cmd = 1")
+		board.write("3 0&")
+		time.sleep(0.01)
+		board.write("4 0&")
+		time.sleep(0.01)
+		board.write("5 0&")
+		time.sleep(0.01)
+
 
 
 def main():
@@ -120,13 +137,14 @@ def main():
 	pub_volt = rospy.Publisher('/battery_voltage', Int64, queue_size=10)
 	
 	# Subscribe
-	rospy.Subscriber("/serial_query_distance", Empty, query_distance)
 	rospy.Subscriber("/serial_send_dc", Int64MultiArray, send_dc)
 	rospy.Subscriber("/serial_send_servo", Int64MultiArray, send_servo)
+	rospy.Subscriber("/serial_stop_dc", Int64, call_stop)
 	
 	
 	try:
 		thread.start_new_thread( query_battery, () )
+		thread.start_new_thread( query_distance, () )
 		thread.start_new_thread( serial_incoming, () )
 	except:
 		rospy.logerr(docname + " -> couldn't executed query_battery & serial_incoming")
