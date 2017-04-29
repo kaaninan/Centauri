@@ -79,4 +79,9 @@ void parseCommand(String com) {
     poweroff();
   }
 
+  // RESET
+  else if (part1.equalsIgnoreCase("99")) {
+    resetFunc();
+  }
+
 }
