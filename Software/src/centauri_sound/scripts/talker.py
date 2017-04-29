@@ -11,17 +11,26 @@ def talker():
     
 	rate = rospy.Rate(1) # 10hz
 	
-	while not rospy.is_shutdown():
-    
-		data = Int64MultiArray()
-		data.data.append(50)
-		data.data.append(50)
-		data.data.append(1)
-		data.data.append(1)
-		data.data.append(10)
-		data.data.append(1)
-		pub.publish(data)
-		rate.sleep()
+	data = Int64MultiArray()
+	data.data.append(0)
+	data.data.append(20)
+	data.data.append(1)
+	data.data.append(1)
+	data.data.append(10)
+	data.data.append(1)
+	pub.publish(data)
+	
+# 	while not rospy.is_shutdown():
+#     
+# 		data = Int64MultiArray()
+# 		data.data.append(20)
+# 		data.data.append(20)
+# 		data.data.append(1)
+# 		data.data.append(1)
+# 		data.data.append(10)
+# 		data.data.append(1)
+# 		pub.publish(data)
+# 		rate.sleep()
 
 if __name__ == '__main__':
 	try:

@@ -86,33 +86,39 @@ def callback_command(data):
 
 
 def distance_back(data):
-	global dis_back, stop_cmd
+	global dis_back, stop_cmd, pub_stop
 	dis_back = data.data
 	limit = rospy.get_param('~distance_limit')
-	if dis_back < limit:
+	if dis_back < limit and stop_cmd == 0:
+		stop_cmd = 1
 		data = Int64()
-		data.data = 1
+		data.data = stop_cmd
 		pub_stop.publish(data)
 		rate.sleep()
-	else:
+	elif dis_back >= limit and stop_cmd == 1:
+		stop_cmd = 0
 		data = Int64()
-		data.data = 0
+		data.data = stop_cmd
 		pub_stop.publish(data)
 		rate.sleep()
 	
 	
 def distance_front(data):
-	global dis_front, stop_cmd
+	global dis_front, stop_cmd, pub_stop
 	dis_front = data.data
 	limit = rospy.get_param('~distance_limit')
-	if dis_front < limit:
+	if dis_front < limit and stop_cmd == 0:
+		stop_cmd = 1
+		rospy.logerr("dis")
 		data = Int64()
-		data.data = 1
+		data.data = stop_cmd
 		pub_stop.publish(data)
 		rate.sleep()
-	else:
+	elif dis_front >= limit and stop_cmd == 1:
+		rospy.logerr("dis5")
+		stop_cmd = 0
 		data = Int64()
-		data.data = 0
+		data.data = stop_cmd
 		pub_stop.publish(data)
 		rate.sleep()
 
@@ -131,7 +137,7 @@ def main():
 	
 	rospy.Subscriber('/command_dc', Int64MultiArray, callback_command)
 	
-	rate = rospy.Rate(1) # Only use stop dc when low distance
+	rate = rospy.Rate(100) # Only use stop dc when low distance
 	
 	time.sleep(4)
 	# Stop when starting

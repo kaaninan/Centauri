@@ -23,8 +23,9 @@ def connect():
 	if(board is None):
 		rospy.logfatal(docname+ " couldn't connect serial!")
 	board.flush()
-# 	board.write("99&")
-# 	time.sleep(0.5)
+	time.sleep(0.1)
+	board.write("99&")
+	time.sleep(0.5)
 
 
 def serial_incoming():
