@@ -1,0 +1,19 @@
+<launch>
+
+	<node pkg="sound_play" type="soundplay_node.py" name="soundplay_node"/>
+	<node pkg="centauri_sound" type="sound_server.py" name="sound_server" output="screen"/>
+	
+	<node pkg="centauri_hardware" type="serial_connection.py" name="serial_connection" output="screen">
+		<param name="port" value="/dev/ttyS1"/>
+		<param name="baudrate" value="19200"/>	
+	</node>
+	
+	<node pkg="centauri_motion" type="servo_controller.py" name="servo_controller" output="screen">
+		<rosparam file="$(find centauri_motion)/params/Limit.yaml" command="load"/>
+		<rosparam file="$(find centauri_motion)/params/Motion.yaml" command="load"/>
+	</node>
+	
+	
+</launch>
+
+
