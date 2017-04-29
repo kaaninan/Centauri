@@ -15,6 +15,7 @@ void parseCommand(String com) {
 
   // Distance
   if (part1.equalsIgnoreCase("1")) {
+    piSerial.print("1!");
     piSerial.print(front_distance);
     piSerial.print("-");
     piSerial.println(back_distance);
@@ -22,6 +23,7 @@ void parseCommand(String com) {
   // Voltage
   else if (part1.equalsIgnoreCase("2")) {
     int volt = bat_voltage * 10;
+    piSerial.print("2!");
     piSerial.println(volt);
   }
 
@@ -77,6 +79,11 @@ void parseCommand(String com) {
   // SHUTDOWN
   else if (part1.equalsIgnoreCase("9")) {
     poweroff();
+  }
+
+  // RESET
+  else if (part1.equalsIgnoreCase("99")) {
+    resetFunc();
   }
 
 }
