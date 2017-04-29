@@ -44,6 +44,10 @@ void shutdown_func(){
   int stp = analogRead(stop_button_pin);
   if (stp > 100) {
 
+    // Motoru durdur
+    hiz_sag(0);
+    hiz_sol(0);
+
     // Döngüyü Başlat
 
     int single_play_kapat = 0;
