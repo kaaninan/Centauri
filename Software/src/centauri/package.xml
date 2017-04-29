@@ -13,8 +13,9 @@
   <run_depend>centauri_sound</run_depend>
   <run_depend>centauri_bridge</run_depend>
   <run_depend>centauri_interface</run_depend>
-  <run_depend>centauri_osc</run_depend>
-  <run_depend>centauri_start</run_depend>
+  <run_depend>centauri_eeg</run_depend>
+  <run_depend>centauri_hardware</run_depend>
+  <run_depend>centauri_motion</run_depend>
 
   <export>
     <metapackage/>

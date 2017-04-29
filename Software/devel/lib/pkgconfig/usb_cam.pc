@@ -1,0 +1,8 @@
+prefix=/home/robot/Centauri/Software/devel
+
+Name: usb_cam
+Description: Description of usb_cam
+Version: 0.3.4
+Cflags: -I/home/robot/Centauri/Software/src/usb_cam/include
+Libs: -L/home/robot/Centauri/Software/devel/lib -lusb_cam
+Requires: 

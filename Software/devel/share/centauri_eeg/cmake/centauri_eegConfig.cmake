@@ -145,7 +145,7 @@ foreach(library ${libraries})
   endif()
 endforeach()
 
-set(centauri_eeg_EXPORTED_TARGETS "")
+set(centauri_eeg_EXPORTED_TARGETS "centauri_eeg_generate_messages_cpp;centauri_eeg_generate_messages_eus;centauri_eeg_generate_messages_lisp;centauri_eeg_generate_messages_nodejs;centauri_eeg_generate_messages_py")
 # create dummy targets for exported code generation targets to make life of users easier
 foreach(t ${centauri_eeg_EXPORTED_TARGETS})
   if(NOT TARGET ${t})
@@ -182,7 +182,7 @@ foreach(depend ${depends})
   list(APPEND centauri_eeg_EXPORTED_TARGETS ${${centauri_eeg_dep}_EXPORTED_TARGETS})
 endforeach()
 
-set(pkg_cfg_extras "")
+set(pkg_cfg_extras "centauri_eeg-msg-extras.cmake")
 foreach(extra ${pkg_cfg_extras})
   if(NOT IS_ABSOLUTE ${extra})
     set(extra ${centauri_eeg_DIR}/${extra})

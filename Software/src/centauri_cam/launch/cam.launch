@@ -1,0 +1,22 @@
+<launch>
+
+   <include file="$(find video_stream_opencv)/launch/camera.launch" >
+        <arg name="camera_name" value="webcam" />
+        <arg name="video_stream_provider" value="0" />
+        <arg name="fps" value="30" />
+        <arg name="frame_id" value="webcam" />
+        <!-- camera info loading, take care as it needs the "file:///" at the start , e.g.:
+        "file:///$(find your_camera_package)/config/your_camera.yaml" -->
+        <arg name="camera_info_url" value="" />
+        <arg name="flip_horizontal" value="false" />
+        <arg name="flip_vertical" value="true" />
+        <arg name="visualize" value="false" />
+   </include>
+   
+   <node pkg="web_video_server" type="web_video_server" name="web_video_server" output="screen">
+		<param name="port" value="8080"/>
+	</node>
+
+
+
+</launch>
