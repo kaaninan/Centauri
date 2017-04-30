@@ -1,56 +1,70 @@
 #!/usr/bin/env python
 
-import rospy
-import time
+import rospy, time, thread
 from std_msgs.msg import *
 
-pwm_right = 0
-pwm_left = 0
-dir_left = 0
-dir_right = 0
+## PROCESS
+# 1. Komut /command_dc uzerinden (hiz_sag, hiz_sol, yon_sag, yon_sol) olarak gelir / go()
+# 2. Yon degisimine gore durdurma ve yeniden hizlandirma / go() -> accel()
+# 2. Degismiyorsa direk belirlenen hiza gitme / go() -> accel()
+# 3. Step sayisina gore her adimda degisecek hiz hesaplanir ve thread acilir / accel() -> send_hw()
+# 4. Thread bitene kadar running=1 yapilir ve o sirada gelen komutlar islenmez / send_hw()
 
-running = 0
-stop_cmd = 0
+## COMMAND FLOW
+# callback_command() -> go() -> accel() -> send_hw()
+# Externally -> distance_back() & distance_front() || If the obstacle is visible, stop
 
 
-
-# Istenen pwm ve yone don
-def go(goal_right, goal_left, goal_dir_right, goal_dir_left, step, sleep):
-	global pwm_left, pwm_right, dir_left, dir_right, running
+# SUBSCRIBER #
+def callback_command(data):
+	rospy.loginfo("callback")
+	go(data.data[0], data.data[1], data.data[2], data.data[3])
+	
+	
+	
+# Yon degisiyorsa durdur ve tekrar hizlandir
+def go(goal_right, goal_left, goal_dir_right, goal_dir_left):
+	global dir_left, dir_right
 	
 	# Yon degisikligini algila
 	if running == 0:
-		if dir_left == goal_dir_left and dir_right == goal_dir_right:
-			# Hic yon degismiyor
-			accel(goal_right, goal_left, step, sleep)
+		rospy.loginfo("Callback DC")
 	
-		elif dir_left != goal_dir_left and dir_right == goal_dir_right:
+		if dir_left != goal_dir_left and dir_right == goal_dir_right:
 			# Sadece sol
-			accel(pwm_right, 0, step, sleep) # Dur
+			accel(pwm_right, 0) # Dur
 			dir_left = goal_dir_left
-			accel(goal_right, goal_left, step, sleep) # Hizlan
 			
 		elif dir_left == goal_dir_left and dir_right != goal_dir_right:
 			# Sadece sag
-			accel(0, pwm_left, step, sleep) # Dur
+			accel(0, pwm_left) # Dur
 			dir_right = goal_dir_right
-			accel(goal_right, goal_left, step, sleep) # Hizlan
 			
-		else:
+		elif dir_left != goal_dir_left and dir_right != goal_dir_right:
 			# Her ikisi degisiyor
-			accel(0, 0, step, sleep) # Dur
+			accel(0, 0) # Dur
 			dir_right = goal_dir_right
 			dir_left = goal_dir_left
-			accel(goal_right, goal_left, step, sleep) # Hizlan
+			
+		# Her ihtimalde istenen yere git
+		accel(goal_right, goal_left) # Hizlan
+		
+	else:
+		rospy.loginfo("Callback DC - Already running!")
 
 
 
-# Ivmelendir
-def accel(goal_right, goal_left, step, sleep):
-	global pwm_left, pwm_right, dir_left, dir_right, stop_cmd, running, dis_back, dis_front
+# Adim basina dusen pwmi hesapla ve thread a gonder
+def accel(goal_right, goal_left):
+	global running, pwm_right
+	
+	# For calibration
+	if dir_left == 0 and dir_right == 0 and pwm_right > 49:
+		pwm_right = pwm_right - 50
 	
 	# Komutlar ust uste binmesin
 	running = 1
+	rospy.loginfo("Start accel")
 	
 	# Hiz ne kadar degisecek
 	step_right = goal_right - pwm_right
@@ -60,6 +74,16 @@ def accel(goal_right, goal_left, step, sleep):
 	single_step_right = step_right/float(step)
 	single_step_left = step_left/float(step)
 	
+	try:
+		thread.start_new_thread( send_hw, (single_step_left, single_step_right) )
+	except:
+		rospy.logerr(docname + " -> couldn't executed")
+		
+	
+
+# Her adim icin motorlara komut gonder
+def send_hw(single_step_left, single_step_right):
+	global pwm_right, pwm_left, running
 	# Her adimda hizi arttir ve bekle
 	for i in range(0, step):
 		pwm_right += single_step_right
@@ -70,63 +94,72 @@ def accel(goal_right, goal_left, step, sleep):
 		data.data.append(dir_left) # 2 DIR
 		data.data.append(round(pwm_left, 0)) # 2 SPEED
 		pub_dc.publish(data)
-		time.sleep(sleep/10)
-		
+		time.sleep(sleep/float(10))
 	running = 0
-	
+	rospy.loginfo("End Thread")
 
 
-def callback_command(data):
- 	if running == 0:
-	 	rospy.loginfo("Callback DC")
- 		go(data.data[0], data.data[1], data.data[2], data.data[3], data.data[4], data.data[5])
- 	else:
- 		rospy.logwarn("Callback DC - Already running!")
 
 
+
+# Onune engel cikarsa serial iletisimini kesme komutu yolla
 
 def distance_back(data):
-	global dis_back, stop_cmd, pub_stop
+	global dis_back, stop_cmd_back
 	dis_back = data.data
 	limit = rospy.get_param('~distance_limit')
-	if dis_back < limit and stop_cmd == 0:
-		stop_cmd = 1
+	if dis_back <= limit and stop_cmd_back == 0:
+		stop_cmd_back = 1
 		data = Int64()
-		data.data = stop_cmd
+		data.data = stop_cmd_back
 		pub_stop.publish(data)
 		rate.sleep()
-	elif dis_back >= limit and stop_cmd == 1:
-		stop_cmd = 0
+	elif dis_back > limit and stop_cmd_back == 1:
+		stop_cmd_back = 0
 		data = Int64()
-		data.data = stop_cmd
+		data.data = stop_cmd_back
 		pub_stop.publish(data)
 		rate.sleep()
 	
 	
 def distance_front(data):
-	global dis_front, stop_cmd, pub_stop
+	global dis_front, stop_cmd_front
 	dis_front = data.data
 	limit = rospy.get_param('~distance_limit')
-	if dis_front < limit and stop_cmd == 0:
-		stop_cmd = 1
-		rospy.logerr("dis")
+	if dis_front <= limit and stop_cmd_front == 0:
+		stop_cmd_front = 1
 		data = Int64()
-		data.data = stop_cmd
+		data.data = stop_cmd_front
 		pub_stop.publish(data)
 		rate.sleep()
-	elif dis_front >= limit and stop_cmd == 1:
-		rospy.logerr("dis5")
-		stop_cmd = 0
+	elif dis_front > limit and stop_cmd_front == 1:
+		stop_cmd_front = 0
 		data = Int64()
-		data.data = stop_cmd
+		data.data = stop_cmd_front
 		pub_stop.publish(data)
 		rate.sleep()
 
+
+def default():
+	global pwm_right, pwm_left, dir_left, dir_right, running, stop_cmd_back, stop_cmd_front, sleep, step
+	
+	pwm_right = 0
+	pwm_left = 0
+	dir_left = 0
+	dir_right = 0
+	
+	running = 0
+	stop_cmd_back = 0
+	stop_cmd_front = 0
+	
+	step = rospy.get_param('~step')
+	sleep = rospy.get_param('~sleep')
 
 
 def main():
 	
-	global pub_dc, pub_stop, rate	
+	global pub_dc, pub_stop, rate
+	
 	rospy.init_node('motion_dc', anonymous=True)
 	
 	pub_dc = rospy.Publisher('/serial_send_dc', Int64MultiArray, queue_size=10)
@@ -139,9 +172,11 @@ def main():
 	
 	rate = rospy.Rate(100) # Only use stop dc when low distance
 	
+	default()
+	
 	time.sleep(4)
 	# Stop when starting
-	go(0, 0, 0, 0, 10, 0.1)
+	go(0, 0, 0, 0)
 	
 	rospy.spin()
 	

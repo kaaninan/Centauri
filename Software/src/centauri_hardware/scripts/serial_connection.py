@@ -36,24 +36,26 @@ def serial_incoming():
 		
 
 def parse_data(data):
-	arr = data.split("!")
-	if(arr[0] == "1"):
-		dis = arr[1].split("-")
-		dis2 = dis[1].split("\/")
-		
-		data_back = Int64()
-		data_back.data = int(dis[0])
-		pub_dis_back.publish(data_back)
-		
-		data_front = Int64()
-		data_front.data = int(dis[1])
-		pub_dis_front.publish(data_front)
-				
-	elif(arr[0] == "2"):
-		data_battery = Int64()
-		data_battery.data = int(arr[1])
-		pub_volt.publish(data_battery)
-
+	try:
+		arr = data.split("!")
+		if(arr[0] == "1"):
+			dis = arr[1].split("-")
+			dis2 = dis[1].split("\/")
+			
+			data_back = Int64()
+			data_back.data = int(dis[0])
+			pub_dis_back.publish(data_back)
+			
+			data_front = Int64()
+			data_front.data = int(dis[1])
+			pub_dis_front.publish(data_front)
+					
+		elif(arr[0] == "2"):
+			data_battery = Int64()
+			data_battery.data = int(arr[1])
+			pub_volt.publish(data_battery)
+	except:
+		pass
 
 
 # Queries
@@ -115,7 +117,7 @@ def call_stop(data):
 	global stop_cmd
 	stop_cmd = data.data
 	if stop_cmd == 1:
-		rospy.logwarn("Hardware Warning! Don't send command to board. Stop Cmd = 1")
+		rospy.logwarn("Hardware Warning! Don't send command to board. No distance")
 		board.write("3 0&")
 		time.sleep(0.01)
 		board.write("4 0&")
