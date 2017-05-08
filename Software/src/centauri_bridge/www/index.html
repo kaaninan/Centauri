@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title>The Centauri Project</title>
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+		<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+	</head>
+
+	<body>
+
+		<!-- Header -->
+		<div class="content">
+			<div class="col-xs-12"><div class="logo">CENTAURI ROBOT</div></div>
+		</div>
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Status Bar -->
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="statusbar"><span>Offline</span>
+						<div class="battery">%17 <i class="fa fa-battery-4 fa-rotate-270" style="font-size: 16px; color: #16A085;" aria-hidden="true"></i></div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Modes - State - Technic -->
+			<div class="row">
+
+				<!-- Modes -->
+				<div class="col-sm-4">
+					<div class="panel panel-default" style="height: 220px">
+						<div class="panel-heading">
+							<h3 class="panel-title">Select Modes</h3>
+						</div>
+						<div class="panel-body">
+							<ul class="modes" style="margin-left: 20px">
+								<a href="#"><li class="">Sleep</li></a>
+								<a href="#"><li class="">EEG Smart Interface</li></a>
+								<a href="#"><li class="">Manual Control</li></a>
+								<a href="#"><li class="">Self Introducting</li></a>
+								<a href="#"><li class="">Dancing</li></a>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<!-- State -->
+				<div class="col-sm-4">
+					<div class="panel panel-default" style="height: 220px">
+						<div class="panel-heading">
+							<h3 class="panel-title">State</h3>
+						</div>
+						<div class="panel-body">
+							<table style="margin-top: 10px; margin-left: 20px;">
+								<tbody style="font-size: 15px">
+									<tr style="height: 30px;">
+										<td><b>Mode:</b></td>
+										<td style="padding-left: 20px"><span style="color: #16A085">EEG Interface</span></td>
+									</tr>
+									<tr style="height: 30px;">
+										<td><b>Headset:</b></td>
+										<td style="padding-left: 20px"><span style="color: #16A085">Connected</span></td>
+									</tr>
+									<tr style="height: 30px;">
+										<td><b>Serial:</b></td>
+										<td style="padding-left: 20px"><span style="color: #16A085">Connected</span></td>
+									</tr>
+									<tr style="height: 30px;">
+										<td><b>Webcam:</b></td>
+										<td style="padding-left: 20px"><span style="color: #16A085">Connected</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+
+				<!-- Technic -->
+				<div class="col-sm-4">
+					<div class="panel panel-default" style="height: 220px">
+						<div class="panel-heading">
+							<h3 class="panel-title">Technic</h3>
+						</div>
+						<div class="panel-body">
+							<table style="margin-left: 20px;">
+								<tbody style="font-size: 15px">
+									<tr style="height: 30px;">
+										<td><b>Uptime:</b></td>
+										<td style="padding-left: 20px">12:22</td>
+									</tr>
+									<tr style="height: 30px;">
+										<td><b>Load:</b></td>
+										<td style="padding-left: 20px">1.26</td>
+									</tr>
+									<tr style="height: 30px;">
+										<td><b>Voltage:</b></td>
+										<td style="padding-left: 20px">11.1V</td>
+									</tr>
+								</tbody>
+							</table>
+							<div style="width:100px; margin:auto; margin-top: 20px;">
+								<button type="button" class="btn btn-sm btn-danger" style="padding-left: 10px; padding-right: 10px;">Shutdown</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+
+			<!-- Smart Interface -->
+			<div class="page-header">
+				<h1>Smart Interface</h1>
+			</div>
+
+
+			<div class="row">
+
+				<div class="col-sm-9">
+					<div style="padding-left: 40px">Menu Status: <b style="color: green; display: none">Online</b><b style="color: red">Offline</b></div><br>
+					<table style="margin-top: 10px; margin-left: 20px;">
+						<thead>
+							<td style="width: 20px; height: 30px"><b></b></td>
+							<td style="width: 40px"><b>No</b></td>
+							<td style="width: 300px"><b>Menu</b></td>
+							<td style="width: 80px"><b>Point</b></td>
+							<td style="width: 50px"><b>Options</b></td>
+						</thead>
+						<tbody style="font-size: 15px">
+							<tr style="height: 30px;">
+								<td>+</td>
+								<td>1</td>
+								<td>I need a water</td>
+								<td>0.54</td>
+								<td>
+									<button type="button" class="btn btn-xs btn-danger">Delete</button>
+								</td>
+							</tr>
+							<tr style="height: 30px;">
+								<td></td>
+								<td>2</td>
+								<td>Read the news</td>
+								<td>0.54</td>
+								<td>
+									<button type="button" class="btn btn-xs btn-danger">Delete</button>
+								</td>
+							</tr>
+							<tr style="height: 30px;">
+								<td></td>
+								<td>3</td>
+								<td>Call my father</td>
+								<td>0.54</td>
+								<td>
+									<button type="button" class="btn btn-xs btn-danger">Delete</button>
+								</td>
+							</tr>
+							<tr style="height: 30px;">
+								<td></td>
+								<td>4</td>
+								<td>Open music</td>
+								<td>0.54</td>
+								<td>
+									<button type="button" class="btn btn-xs btn-danger">Delete</button>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<div class="col-sm-3">
+					<div class="form-group">
+						<label for="usr">Name:</label>
+						<input type="text" class="form-control" id="usr">
+					</div>
+
+					<div class="form-group">
+						<label for="sel1">Select Command:</label>
+					 	<select class="form-control" id="sel1">
+						    <option>Speech</option>
+						    <option>Motion</option>
+						    <option>Call</option>
+						    <option>System</option>
+						</select>
+					</div>
+
+					<div class="form-group">
+						<label for="usr">Content:</label>
+						<input type="text" class="form-control" id="usr">
+					</div>
+
+					<button type="button" class="btn btn-success">Save</button>
+				</div>
+
+			</div>
+			<br>
+
+			<div class="row">
+
+				<div class="col-xs-12">
+					<!-- Warning -->
+					<div class="well">
+						Commands (Gyro):
+						<ul>
+							<li>OK: Head forward</li>
+							<li>EXIT: Head back</li>
+							<li>LEFT: Head turn left</li>
+							<li>RIGHT: Head turn right</li>
+						</ul>
+						Access the menu: <b>Two times OK</b><br>
+						Navigate the menu: <b>Left or right</b><br>
+						Exit the menu: <b>One times EXIT</b>
+					</div>
+				</div>
+			</div>
+
+			
+			<!-- Manual Control -->
+			<div class="page-header">
+				<h1>Manual Control</h1>
+			</div>
+
+			<div class="row" style="margin-bottom: 20px">
+				<div class="col-xs-12">
+					<div style="width: 480px; height: 360px; margin: auto; border: 4px solid #ECF0F1" id="canvas"></div>
+				</div>
+			</div>				
+
+			<div class="row">
+				<div class="col-xs-4" style="height: 200px; margin-top: 10px">
+					<div class="zone_left"></div>
+					<div style="text-align: right; margin-right: 65px; margin-top: 5px; font-size: 16px;">Body</div>
+				</div>
+				<div class="col-xs-4" style="height: 200px;"">
+					<div style="padding-top: 25px; font-size: 20px; text-align: center;">
+						<b>48 cm</b><br>Front Distance<br><br><b>100 cm</b><br>Back Distance
+					</div>
+				</div>
+				<div class="col-xs-4" style="display: relative; height: 200px; margin-top: 10px">
+					<div class="zone_right"></div>
+					<div style="text-align: left; margin-left: 65px; margin-top: 5px; font-size: 16px;">Head</div>
+				</div>
+
+			</div>
+
+			<!-- Voice Control -->
+			<div class="page-header">
+				<h1>Control Interface</h1>
+			</div>
+
+			<div class="row">
+
+				<!-- Voice -->
+				<div class="col-sm-6"><br>
+					<span style="font-size: 23px;">Voice</span><br><br>
+					<div class="list-group">
+						<a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+						<a href="#" class="list-group-item">Morbi leo risus</a>
+						<a href="#" class="list-group-item">Porta ac consectetur ac</a>
+						<a href="#" class="list-group-item">Vestibulum at eros</a>
+					</div>
+					<div class="form-group">
+						<label for="usr">Other:</label>
+						<input type="text" class="form-control" id="usr">
+					</div>
+					<button type="button" class="btn btn-primary">Say</button>
+				</div>
+
+				<!-- Motion -->
+				<div class="col-sm-6"><br>
+					<span style="font-size: 23px;">Motion</span><br><br>
+					<div class="list-group">
+						<a href="#" class="list-group-item">
+							<h4 class="list-group-item-heading">List group item heading</h4>
+							<p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+						</a>
+						<a href="#" class="list-group-item">
+							<h4 class="list-group-item-heading">List group item heading</h4>
+							<p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+						</a>
+						<a href="#" class="list-group-item">
+							<h4 class="list-group-item-heading">List group item heading</h4>
+							<p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer" style="margin-top: 20px; line-height: 30px; text-align: center; border-top: 1px solid #ccc; padding-top: 20px">Copyright &copy; 2017, Kağan İnan <br> <b>Centauri Project</b> </div>
+		</div>
+		<!-- container -->
+							
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/nipplejs.min.js"></script>
+		<script type="text/javascript" src="js/eventemitter.js"></script>
+		<script type="text/javascript" src="js/mjpegcanvas.js"></script>
+		<script type="text/javascript">
+			(function(){
+				var viewer = new MJPEGCANVAS.Viewer({
+					divID: 'canvas',
+					host: '192.168.1.39',
+					port: '8000',
+					width: 480,
+					height: 360,
+					topic: '/webcam/image_raw'
+				})
+			})();
+		</script>
+		<script type="text/javascript">
+			
+		var s = function(sel) {
+			return document.querySelector(sel);
+		};
+		
+		var options = {
+			zone: s('.zone_left'),
+			mode: 'static',
+			position: {
+				left: '50%',
+				top: '50%'
+				},
+			color: 'red'
+		};
+		
+		var options_right = {
+			zone: s('.zone_right'),
+			mode: 'static',
+			position: {
+				left: '50%',
+				top: '50%'
+			},
+			color: 'blue'
+		};
+		
+
+		var manager_right = nipplejs.create(options_right);
+		var manager_left = nipplejs.create(options);
+		bindNipple();
+
+		
+		function bindNipple () {
+			manager_left.on('move', function (evt, data) {
+				console.log(data.direction);
+				console.log(data.force);
+			});
+			manager_left.on('end', function (evt, data) {
+
+			});
+		}
+		</script>
+	</body>
+</html>
