@@ -7,6 +7,8 @@
 	
 	<node pkg="centauri_motion" type="dc_controller.py" name="dc_controller" output="screen">
 		<param name="distance_limit" value="15"/>
+		<param name="step" value="10"/> <!-- For Acceleration -->
+		<param name="sleep" value="0.1"/> <!-- For Acceleration -->
 	</node>
 	
 </launch>

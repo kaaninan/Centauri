@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-import rospy
+import rospy, time
 from centauri_sound.msg import *
 from std_msgs.msg import *
 
@@ -9,7 +9,16 @@ def talker():
 
 	rospy.init_node('talker', anonymous=True)
     
-	rate = rospy.Rate(1) # 10hz
+	rate = rospy.Rate(10) # 10hz
+	
+	data = Int64MultiArray()
+	data.data.append(50)
+	data.data.append(50)
+	data.data.append(0)
+	data.data.append(0)
+	pub.publish(data)
+	
+	time.sleep(2)
 	
 	while not rospy.is_shutdown():
     
@@ -18,10 +27,9 @@ def talker():
 		data.data.append(50)
 		data.data.append(1)
 		data.data.append(1)
-		data.data.append(10)
-		data.data.append(1)
 		pub.publish(data)
 		rate.sleep()
+		rospy.loginfo("pub")
 
 if __name__ == '__main__':
 	try:
