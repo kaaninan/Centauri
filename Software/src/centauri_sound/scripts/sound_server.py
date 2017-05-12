@@ -26,6 +26,8 @@ def sound_translator(data):
 		soundhandle.say(data.param)
 	if data.cmd == "builtin":
 		soundhandle.play(int(data.param))
+	if data.cmd == "stop":
+		soundhandle.stopAll()
 
 
 def init():

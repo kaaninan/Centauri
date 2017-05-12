@@ -1,0 +1,5 @@
+<launch>
+	
+	<node pkg="centauri_eeg" type="epoc_publish.py" name="epoc_publish"/>
+	
+</launch>

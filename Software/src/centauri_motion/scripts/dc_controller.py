@@ -17,7 +17,7 @@ from std_msgs.msg import *
 
 # SUBSCRIBER #
 def callback_command(data):
-	rospy.loginfo("callback")
+	rospy.loginfo("callback dc")
 	go(data.data[0], data.data[1], data.data[2], data.data[3])
 	
 	
@@ -28,7 +28,6 @@ def go(goal_right, goal_left, goal_dir_right, goal_dir_left):
 	
 	# Yon degisikligini algila
 	if running == 0:
-		rospy.loginfo("Callback DC")
 	
 		if dir_left != goal_dir_left and dir_right == goal_dir_right:
 			# Sadece sol
@@ -64,7 +63,6 @@ def accel(goal_right, goal_left):
 	
 	# Komutlar ust uste binmesin
 	running = 1
-	rospy.loginfo("Start accel")
 	
 	# Hiz ne kadar degisecek
 	step_right = goal_right - pwm_right
@@ -96,7 +94,6 @@ def send_hw(single_step_left, single_step_right):
 		pub_dc.publish(data)
 		time.sleep(sleep/float(10))
 	running = 0
-	rospy.loginfo("End Thread")
 
 
 

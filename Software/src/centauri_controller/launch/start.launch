@@ -4,6 +4,7 @@
 	<include file="$(find centauri_hardware)/launch/start.launch"/>
 	<include file="$(find centauri_motion)/launch/start.launch"/> 
 	<include file="$(find centauri_cam)/launch/start.launch"/> 
+	<include file="$(find centauri_eeg)/launch/start.launch"/> 
 	<include file="$(find centauri_bridge)/launch/start.launch"/>
 		
 </launch>

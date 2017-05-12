@@ -1,10 +1,7 @@
 #!/usr/bin/env python
 
-import rospy
-import serial
-import thread
-import time
-import os
+import rospy, serial, thread, time, os
+from datetime import timedelta
 from std_msgs.msg import *
 
 # DEFAULT
@@ -24,6 +21,8 @@ def connect():
 		rospy.logfatal(docname+ " couldn't connect serial!")
 	board.flush()
 	time.sleep(0.1)
+	board.write("99&")
+	time.sleep(0.3)
 	board.write("99&")
 	time.sleep(0.5)
 
@@ -69,6 +68,17 @@ def query_distance():
 	while not rospy.is_shutdown():
 		board.write("1&")
 		time.sleep(0.2)
+		
+# def uptime():
+# 	while not rospy.is_shutdown():
+# 		with open('/proc/uptime', 'r') as f:
+# 			uptime_seconds = float(f.readLine().split()[0])
+# 			uptime_string = str(timedelta(seconds = uptime_seconds))
+# 			
+# 			data = String()
+# 			data.data = uptime_string
+# 			pub_uptime.publish(data)
+# 		time.sleep(1)
 	
 	
 def send_dc(data):
@@ -124,11 +134,23 @@ def call_stop(data):
 		time.sleep(0.01)
 		board.write("5 0&")
 		time.sleep(0.01)
+		
 
+# SYSTTEM FUNC		
+
+def call_reboot(data):
+	time.sleep(1)
+	rospy.loginfo("Reboot!")
+	os.system("sudo reboot")
+	
+def call_shutdown(data):
+	time.sleep(1)
+	rospy.loginfo("Shutdown!")
+	board.write("9&")
 
 
 def main():
-	global pub_dis_front, pub_dis_back, pub_volt
+	global pub_dis_front, pub_dis_back, pub_volt, pub_uptime
 
 	rospy.init_node('serial_connection', anonymous=True)
 	
@@ -138,17 +160,21 @@ def main():
 	pub_dis_front = rospy.Publisher('/distance_front', Int64, queue_size=10)
 	pub_dis_back = rospy.Publisher('/distance_back', Int64, queue_size=10)
 	pub_volt = rospy.Publisher('/battery_voltage', Int64, queue_size=10)
+	pub_uptime = rospy.Publisher('/uptime', Int64, queue_size=10)
 	
 	# Subscribe
 	rospy.Subscriber("/serial_send_dc", Int64MultiArray, send_dc)
 	rospy.Subscriber("/serial_send_servo", Int64MultiArray, send_servo)
 	rospy.Subscriber("/serial_stop_dc", Int64, call_stop)
+	rospy.Subscriber("/reboot", Empty, call_reboot)
+	rospy.Subscriber("/shutdown", Empty, call_shutdown)
 	
 	
 	try:
 		thread.start_new_thread( query_battery, () )
 		thread.start_new_thread( query_distance, () )
 		thread.start_new_thread( serial_incoming, () )
+# 		thread.start_new_thread( uptime, () )
 	except:
 		rospy.logerr(docname + " -> couldn't executed query_battery & serial_incoming")
 		
